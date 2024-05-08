@@ -1,0 +1,124 @@
+.footer{
+    color: white;
+    background: var(--color-primary);
+    margin: 0px auto;
+    position: relative;
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin-top: 5rem;
+}
+.footerContent {
+    display: flex;
+    margin: 0rem 15rem 0rem 5rem;
+    justify-content: space-between;
+}
+.footerAbout {
+    display: flex;
+    text-align: left;
+}
+.footerNav {
+    text-align: left;
+}
+.footerLogo {
+    width: 10rem;
+}
+.footerAbout h3 {
+    font-size: 1.6rem;
+}
+.footerAbout p {
+    font-size: .9rem;
+    text-align: left;
+}
+.footerAboutPara {
+    margin-left: 1rem;
+    text-wrap: nowrap;
+}
+.socialLinkicon {
+    width: 2rem;
+    margin: .5rem;
+}
+.footerNav>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.footerNavList {
+    text-align: left;
+    margin-right: 1rem;
+}
+.footerNav li {
+    margin-left: -2rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    list-style:none
+}
+.footerNav li:hover {
+    color: var(--color-accent);
+}
+.Footerbtn {
+    background: none;
+    padding: 0rem;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    margin-right: 10rem;
+}
+.Footerbtn:hover {
+    color: wheat;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 520px) {
+    .footer{
+        text-align: center;
+    }
+    .footerContent {
+        margin: 0;
+        text-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+    .footerNav{
+        text-align: center;
+    }
+    .footerAbout {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .footerAbout p {
+        text-align: center;
+    }
+    .footerNavList {
+        text-align: center;
+       
+    }
+    .footerLogo {
+        width: 8rem;
+        align-self: center;
+    }
+    .Footerbtn {
+        margin-right: 0rem;
+    }
+    /* .footerAboutPara {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0rem;
+        text-wrap: nowrap;
+    }
+    .footerAbout h3 {
+        font-size: 1.6rem;
+        text-wrap: nowrap;
+    }
+    .footerAbout p {
+        font-size: .9rem;
+        text-align: left;
+        text-wrap: nowrap;
+    } */
+}

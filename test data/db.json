@@ -1,0 +1,51 @@
+{
+    "bookhotels": {
+        "rooms" : [
+            {
+                "roomId": 1,
+                "hotelName": "Ruposhi Bangla",
+                "category": "Five star hotel",
+                "image": "https://pix8.agoda.net/hotelImages/295107/0/a56afa09e8bd28e7d3f6e9a98b711248.jpeg?s=1024x",
+                "roomQuantity": 25,
+                "price": 7500,
+                "description": "Conveniently situated in the Ramna part of Dhaka, this property puts you close to attractions and interesting dining options. Don't leave before paying a visit to the famous Shahjalal International Airport. Rated with 5 stars, this high-quality property provides guests with access to massage, restaurant and hot tub on-site."
+            },
+            {
+                "roomId": 2,
+                "hotelName": "Ruposhi Bangla",
+                "category": "Three star hotel",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSmca6SswfuOMMPOVL0IFjICn7fcI06hvJwar1J_sI3g&s",
+                "roomQuantity": 20,
+                "price": 3500,
+                "description": "Conveniently situated in the Ramna part of Dhaka, this property puts you close to attractions and interesting dining options. Don't leave before paying a visit to the famous Shahjalal International Airport. Rated with 5 stars, this high-quality property provides guests with access to massage, restaurant and hot tub on-site."
+            },
+            {
+                "roomId": 3,
+                "hotelName": "Grand Sylhet Hotel & Resort",
+                "category": "Resort",
+                "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/363993469.jpg?k=cd851e0420b23613ae1c9af6d38c9801dcfbb594b01d22ea01d20634d8a9aefe&o=&hp=1",
+                "roomQuantity": 55,
+                "price": 5500,
+                "description": "Big range of selection for breakfast, Airport pickup and drop-off, it had cinema in the hotel, hotel room was spacious and keep try the chicken sizzler from the restaurant"
+            },
+            {
+                "roomId": 4,
+                "hotelName": "Appayan Guest House Baridhara",
+                "category": "Guest House",
+                "image": "https://images.trvl-media.com/lodging/46000000/45970000/45967600/45967544/cbbae673.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+                "roomQuantity": 5,
+                "price": 2500,
+                "description": "Great place to stay in Gulshan at a very affordable price, the owner is very arranging, i came very late at night and he managed to find me a comfortable room, far from the busy street. Great location also, not far from the airport, definitely 100% recommended !"
+            },
+            {
+                "roomId": 5,
+                "hotelName": "Lovely Hostel",
+                "category": "Hostel",
+                "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.getsethome.com%2Fdormitory-hostel-for-rent-only-girls-in-midc-bhiwandi-kalyan-highway-bhiwandi-thane-prt692&psig=AOvVaw0QZmSf0pXaHPHvdDUJxlVh&ust=1715188873699000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDr982G_IUDFQAAAAAdAAAAABAE",
+                "roomQuantity": 25,
+                "price": 700,
+                "description": "Conveniently situated in the Ramna part of Dhaka, this property puts you close to attractions and interesting dining options. Don't leave before paying a visit to the famous Shahjalal) International Airport. Rated with 5 stars, this high-quality property provides guests with access to massage, restaurant and hot tub on-site."
+            }
+        ]    
+    }
+}
