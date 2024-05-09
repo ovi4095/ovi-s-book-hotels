@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../css/Room.css'
 import { connect } from 'react-redux'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { fetchRooms } from '../../redux/actionCreators'
 
 const mapStateToProps = state => {
@@ -17,13 +17,31 @@ const mapDispatchToProps = dispatch => {
 }
 
 export const RoomDetail = (props) => {
+    const [quantityNumber,setQuantityNumber] = useState(0)
+    
     useEffect(()=> {
         props.fetchRooms();
     },[])
-    const selectedRoom = useLocation()
-    const roomDetail = props.rooms.filter(room => room.roomId === selectedRoom.state.roomId)
-    console.log("Selected Room Id:", selectedRoom.state.roomId)
-    console.log("Selected Room Array:", roomDetail)
+
+    const increaseQuantity = () => {
+        setQuantityNumber(quantityNumber+1)
+    }
+    const decreaseQuantity = () => {
+        setQuantityNumber(quantityNumber-1)
+    }
+
+    
+    const selectedRoom = useLocation();
+    const roomDetail = props.rooms.filter(room => room.roomId === selectedRoom.state.roomId);
+    const roomQuantity = roomDetail.map(room => {return room.roomQuantity})[0];
+    const roomPrice = roomDetail.map(room => {return room.price})[0];
+
+    const roomAvailable = parseInt(roomQuantity) - quantityNumber;
+    const totalPrice = parseInt(roomPrice)* quantityNumber;
+    const increaseQuantityBtnDisable = quantityNumber === roomQuantity? true : false;
+    const decreaseQuantityBtnDisable = quantityNumber === 0? true : false;
+
+
   return (
     <div>
         {roomDetail.map(room =>{
@@ -35,25 +53,56 @@ export const RoomDetail = (props) => {
                         </div>
                         <div className='InfoPosition'>
                             <div className='TitlePosition'>
-                                <h2><strong>Room Name:</strong> {room.title}</h2>
+                                <h2 className='h2FontSize'><strong>Room Name:</strong> {room.title}</h2>
                             </div>
                             <div className='TitlePosition'>
-                                <h4><strong>Hotel Name:</strong> {room.hotelName}</h4>
+                                <h4 className='h4FontSize'><strong>Hotel Name:</strong> {room.hotelName}</h4>
                             </div>
                             <div className='TitlePosition'>
-                                <h5><strong>Room Description:</strong> {room.description}</h5>
+                                <h5 className='h5FontSize'><strong>Room Description:</strong> {room.description}</h5>
                             </div>
                             <div className='TitlePosition'>
-                                <h5><strong>Room Quantity:</strong> {room.roomQuantity}</h5>
+                                <h5 className='h5FontSize'><strong>Room Quantity:</strong> {room.roomQuantity}</h5>
                             </div>
                             <div className='TitlePosition'>
-                                <h5><strong>Room Available:</strong> {room.roomQuantity}</h5>
+                                <h5 className='h5FontSize'><strong>Room Available:</strong> {roomAvailable}</h5>
                             </div>
                             <div className='TitlePosition'>
-                                <h5><strong>Room Booked:</strong> 0</h5>
+                                <h5 className='h5FontSize'><strong>Room Booked:</strong> {quantityNumber}</h5>
                             </div>
                             <div className='TitlePosition'>
-                                <h2><strong>Price:</strong> {room.price}.Tk</h2>
+                                <h2 className='h2FontSize'><strong>Price:</strong> {room.price}.Tk</h2>
+                            </div>
+                            <div className='BookingDisplay'>
+                                <div className='BookingModule'>
+                                    <button className='QuantityBtn' disabled={decreaseQuantityBtnDisable} onClick={decreaseQuantity}>-</button>
+                                    <p className='QuantityDisplay'>{quantityNumber}</p>
+                                    <button className='QuantityBtn' disabled={increaseQuantityBtnDisable} onClick={increaseQuantity}>+</button>
+                                </div>
+                                <div className='BooKingInfoDisplay'>
+                                    <div className='QuantityTitlePosition'>
+                                        <h2 className='h2FontSize'><strong>Total Price:</strong> {totalPrice}.Tk</h2>
+                                    </div>
+                                    <div className='BookingBtnPosition'>
+                                        <Link
+                                            to='/bookingDetail'
+                                            state={{
+                                                image:room.image,
+                                                title:room.title,
+                                                hotel:room.hotelName,
+                                                price:totalPrice,
+                                                quantity:quantityNumber,
+                                            }}    
+                                        >
+                                            <button disabled={decreaseQuantityBtnDisable} className='BookBtn'>Book Now</button>
+                                        </Link>
+                                        <Link
+                                            to='/rooms'
+                                        >
+                                            <button className='CancelBtn'>Cancel</button>
+                                        </Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>

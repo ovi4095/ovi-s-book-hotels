@@ -36,7 +36,15 @@
     align-items: center;
 
 }
-
+.h2FontSize {
+    font-size: 1.2rem;
+}
+.h4FontSize {
+    font-size: 1rem;
+}
+.h5FontSize {
+    font-size: 0.8rem;
+}
 .RoomInfo {
     display: grid;
     margin: 3rem;
@@ -49,13 +57,14 @@
     margin: 1rem;
 }
 .RoomInfoImage {
-    width: 850px;
-    height: 650px;
+    width: 300px;
+    height: 300px;
     border-radius: 12px;
 
 }
 .InfoPosition {
     display: flex;
+    width: 300px;
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid #C73659;
@@ -67,15 +76,157 @@
 .InfoPosition, h1, h2, h3, h4, h5, h6, p {
     color: #A91D3A;
 }
-.TitlePosition {
+.TitlePosition, .QuantityTitlePosition {
     /* margin: 2rem 1rem 2rem 2rem; */
     margin-bottom: 1rem;
     text-align: left;
 }
+.BookingDisplay {
+    display: flex;
+    width:250px;
+    /* margin-right: -2rem; */
+    margin-left: -10px;
+    flex-direction: column;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #C73659;
+    border-radius: 12px;
+}
+.BookingModule {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 5px;
+}
+.QuantityBtn {
+    width: 50px;
+    margin-left: .4rem; 
+    padding: 6px 10px 7px 10px;
+    text-align: center;
+    margin-right: .5rem;
+    font-size: 2rem;
+    border: 0px;
+    border-radius: 12px;
+    background-color: #A91D3A;
+    color: #fff;
+}
+.QuantityBtn:hover {
+    background-color: #151515;
+    transition: all 0.3s;
+}
+.QuantityBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.QuantityDisplay {
+    border: 1px solid #A91D3A;
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-size: 24px;
+}
+.BooKingInfoDisplay {
+    /* padding-top: -20px; */
+}
+.BookingBtnPosition {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr);
+    gap: 24px;
+}
+.BookBtn, .CancelBtn {
+    width: 110px;
+    font-size: 1.2rem;
+    margin-left: -20px ;
+    margin-right: 5px ;
+    padding: 5px;
+    border: 0px;
+    border-radius: 12px;
+}
+.BookBtn:disabled {
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+.BookBtn {
+    background: #A91D3A;
+    color: #fff;
+}
+.CancelBtn {
+    background: #646464;
+    color: #fff;
+}
+.BookBtn:hover {
+    background: #151515;
+    transition: all 0.3s;
+}
+.CancelBtn:hover {
+    background: #151515;
+    transition: all 0.3s;
+}
+
 
 @media screen and (min-width: 765px) {
+    .h2FontSize {
+        font-size: 1.6rem;
+    }
+    .h4FontSize {
+        font-size: 1.4rem;
+    }
+    .h5FontSize {
+        font-size: 1.2rem;
+    }
     .RoomInfo {
         grid-template-columns: repeat(1, 1fr 1fr);
+    }
+    .BookingModule{
+        flex-direction: row;
+    }
+    .BookingDisplay {
+        flex-direction: row;
+        width: 100%;
+    }
+    .InfoPosition {
+        width: 95%;
+    }
+    .RoomInfoImage {
+        width: 850px;
+        height: 650px;
+        border-radius: 12px;
+    
+    }
+    .QuantityTitlePosition {
+        padding: 5px;
+        margin-top: -10px;
+    }
+    .BooKingInfoDisplay {
+        padding-top: -20px;
+    }
+    .BookBtn, .CancelBtn {
+        width: 150px;
+        font-size: 20px;
+        margin-left: 5px ;
+        margin-right: 5px ;
+        padding: 5px;
+        border: 0px;
+        border-radius: 12px;
+    }
+    .BookBtn {
+        background: #A91D3A;
+        color: #fff;
+    }
+    .CancelBtn {
+        background: #646464;
+        color: #fff;
+    }
+    .BookBtn:hover {
+        background: #151515;
+        transition: all 0.3s;
+    }
+    .CancelBtn:hover {
+        background: #151515;
+        transition: all 0.3s;
     }
 
     

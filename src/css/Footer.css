@@ -35,6 +35,9 @@
     margin-left: 1rem;
     text-wrap: nowrap;
 }
+.footerAboutPara p {
+    color: #fff;
+}
 .socialLinkicon {
     width: 2rem;
     margin: .5rem;

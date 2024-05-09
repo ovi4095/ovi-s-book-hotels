@@ -1,0 +1,59 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+.h2Font,
+.h4Font,
+.h5Font,
+.h6Font {
+    color: #A91D3A;
+    text-align: left;
+    font-size: 62.5%*1rem;
+}
+.BookingInfoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BookingInfoDisplay{
+    border: 1px solid #A91D3A;
+    border-radius: 12px;
+    margin: .5rem;
+    padding: 1rem;
+}
+.BookingImage {
+    width: 340px;
+    border-radius: 12px;
+}
+.BookingInfoPosition {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #A91D3A;
+    border-radius: 12px;
+    padding: 1rem;
+}
+@media screen and (min-width: 765px){
+    .h2Font,
+    .h4Font,
+    .h5Font,
+    .h6Font {
+    color: #A91D3A;
+    text-align: left;
+    font-size: 80.5%*1rem;
+}
+    .BookingInfoContainer{
+        width: 1024px;
+        margin-left: 15%;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .BookingInfoDisplay{
+        width: 700px;
+        align-self: center;
+    }
+    .BookingImage {
+        width: 650px;
+    }
+    
+}

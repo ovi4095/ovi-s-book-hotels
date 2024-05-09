@@ -92,12 +92,12 @@ const HomePage = (props) => {
                          Has a restaurant serving meals, and may include a fitness center or pool.</p>
                     </div>
                     <div>
+                        <img className='serviceImage' src={Service2} alt='5 Star Hotel' />
+                    </div>
+                    <div>
                         <h3 className='serviceTitle'>Five Star Hotel</h3>
                         <p className='serviceDetail'>Provides luxurious rooms with high-end amenities like spa services, gourmet dining
                           options, concierge service, and possibly a business center.</p>
-                    </div>
-                    <div>
-                        <img className='serviceImageRevers' src={Service2} alt='5 Star Hotel' />
                     </div>
                     <div>
                         <img className='serviceImage' src={Service3} alt='Guest House' />
@@ -108,12 +108,12 @@ const HomePage = (props) => {
                         other meals, shared common areas, and a homely atmosphere.</p>
                     </div>
                     <div>
+                        <img className='serviceImage' src={Service4} alt='Resort' />
+                    </div>
+                    <div>
                         <h3 className='serviceTitle'>Resort</h3>
                         <p className='serviceDetail'>Offers a wide range of recreational facilities such as swimming pools, spa, sports  
                         facilities,and entertainment activities. Also includes restaurants, bars, and possibly beach or mountain access.</p>
-                    </div>
-                    <div>
-                        <img className='serviceImageRevers' src={Service4} alt='Resort' />
                     </div>
                     <div>
                         <img className='serviceImage' src={Service6} alt='Hostel' />
