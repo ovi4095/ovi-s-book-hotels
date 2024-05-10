@@ -23,13 +23,13 @@ export const Footer = (props) => {
     let navList = props.token === null? (<ul className='collaps'> 
                                           <li><Link className='nav-link' to='/home'>Home</Link></li>
                                           <li><Link className='nav-link' to='/about'>About</Link></li>
-                                          <li><Link className='nav-link' to='/gallery'>Gallery</Link></li>
+                                          <li><Link className='nav-link' to='/rooms'>Rooms</Link></li>
                                       </ul>
                                       ):(
                                       <ul className='collaps'> 
                                         <li><Link className='nav-link' to='/home'>Home</Link></li>
                                         <li><Link className='nav-link' to='/about'>About</Link></li>
-                                        <li><Link className='nav-link' to='/gallery'>Gallery</Link></li>
+                                        <li><Link className='nav-link' to='/rooms'>Rooms</Link></li>
                                       </ul>
                                       );
 

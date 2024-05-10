@@ -29,7 +29,7 @@ const roomReducer = (roomState = { isLoading: true, rooms: []}, action) => {
                 rooms: []
             }
         case actionTypes.LOAD_ROOMS:
-            console.log('room Payload:', action.payload)
+            // console.log('room Payload:', action.payload)
             return {
                 ...roomState,
                 isLoading: false,
@@ -37,6 +37,33 @@ const roomReducer = (roomState = { isLoading: true, rooms: []}, action) => {
             }
         default:
             return roomState;
+    }
+}
+
+const bookedReducer = (bookedState = { isLoading: true, booked: []}, action) => {
+    switch (action.type) {
+        case actionTypes.BOOKED_LOADING:
+            return {
+                ...bookedState,
+                isLoading: true,
+                booked: []
+            }
+        case actionTypes.LOAD_BOOKED:
+            // console.log('bookedState Payload:', action.payload)
+            let booked = [];
+            for (let key in action.payload) {
+                booked.push({
+                    ...action.payload[key],
+                    key: key,
+                })
+            }
+            return {
+                ...bookedState,
+                isLoading: false,
+                booked: booked
+            }
+        default:
+            return bookedState;
     }
 }
 
@@ -103,5 +130,6 @@ export const Reducer = combineReducers({
     categories: categoryReducer,
     rooms: roomReducer,
     comments: commentReducer,
+    booked: bookedReducer,
     auth: authReducer,
 })

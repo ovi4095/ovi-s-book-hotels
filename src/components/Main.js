@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import HomePage from './home/HomePage'
@@ -7,6 +7,7 @@ import Footer from './footer/Footer'
 import Room from './room/Room'
 import RoomDetail from './roomDetail/RoomDetail'
 import BookingDetail from './bookingDetail/BookingDetail'
+import { fetchBooked, fetchRooms } from '../redux/actionCreators'
 
 const mapStateToProps = (state) => {
   return {
@@ -15,13 +16,18 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = dispatch => {
   return {
-      // fetchCategories:() => dispatch(fetchCategories()),
-      // fetchImages:() => dispatch(fetchImages()),
-      // fetchComments:() => dispatch(fetchComments())
+      fetchRooms: () => dispatch(fetchRooms()),
+      fetchBooked: () => dispatch(fetchBooked())
+      
   }
 }
 
 const Main = (props) => {
+  useEffect(() => {
+    props.fetchRooms()
+    props.fetchBooked()
+
+  },[])
   return (
     <div>
       <Header/>

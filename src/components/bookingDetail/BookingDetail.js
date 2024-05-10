@@ -1,13 +1,49 @@
 import React from 'react'
 import '../../css/Booking.css'
 import { connect } from 'react-redux'
-import { useLocation } from 'react-router-dom'
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { Formik } from 'formik'
+import { addBooking } from '../../redux/actionCreators'
 
+const mapStateToProps = (state) => ({})
+
+const mapDispatchToProps = dispatch =>{
+    return {
+        addBooking: (booking, booked) => dispatch(addBooking(booking, booked))
+    }
+}
 export const BookingDetail = (props) => {
 
     const bookingInfo = useLocation().state;
-    // console.log()
+    const navigate = useNavigate();
+    const submitHandler = (value) => {
+            // console.log('Submitted Values:', value.address)
+            const booking = {
+                room: bookingInfo.title,
+                roomId: bookingInfo.roomId,
+                hotel: bookingInfo.hotel,
+                quantity: bookingInfo.quantity,
+                price: bookingInfo.price,
+                address: value.address,
+                phone: value.phone,
+                payment: value.paymentType,
+                key: Math.random().toString(),
+                date: new Date().toString()
+            }
+            const booked = {
+                booked: bookingInfo.quantity,
+                roomId: bookingInfo.roomId,
+                key: Math.random().toString(),
+            }
+
+            // console.log("Booking:", booking)
+            // console.log("Booked:", booked)
+            props.addBooking(booking, booked)
+            navigate('/rooms')
+            
+
+    }
+
     return (
         <div>
             <div className='BookingInfoContainer'>
@@ -20,17 +56,18 @@ export const BookingDetail = (props) => {
                         <div><h4 className='h6Font'><strong>Price: </strong>{bookingInfo.price}.Tk</h4></div>
                     </div>
                 </div>
-                <div>
+                <div className='BookingInfoFrom'>
+                <h3 className='BookingInfoFromTitle'>Booking Confirmation From</h3>
                 <Formik
                         initialValues={{
-                          deliveryAddress: "",
+                          address: "",
                           phone: "",
-                          paymentType: "Cash On Delivery",
+                          paymentType: "Pay In Cash",
                       }}
                       validate={values => {
                         const errors = {};
-                        if(!values.deliveryAddress) {
-                            errors.deliveryAddress = 'Address Required'
+                        if(!values.address) {
+                            errors.address = 'Address Required'
                         }
                         if(!values.phone) {
                             errors.phone = 'Phone Number Required'
@@ -40,28 +77,28 @@ export const BookingDetail = (props) => {
                         return errors;
                       }}
                       onSubmit={(values) => {
-                        this.submitHandler(values);
+                        submitHandler(values);
                       }}
                       >
                         {({values, errors, handleChange, handleBlur, handleSubmit}) => (
                           <form className='checkoutForm'
                                 onSubmit={handleSubmit}>
                                   <input    
-                                      name='deliveryAddress'
-                                      id ='deliveryAddress'
+                                      name='address'
+                                      id ='address'
                                       type='textarea' 
-                                      value={values.deliveryAddress} 
-                                      className='form-control'
+                                      value={values.address} 
+                                      className='form-control InputLength'
                                       placeholder='Your Address'
                                       onBlur={handleBlur}
                                       onChange={handleChange}
                                   />
-                                  <p className='errorMsg'>{errors.deliveryAddress}</p>
+                                  <p className='errorMsg'>{errors.address}</p>
                                   <br />
                                   <input 
                                       name='phone'
                                       id='phone' 
-                                      className='form-control' 
+                                      className='form-control InputLength' 
                                       value={values.phone}
                                       placeholder='Phone Number'
                                       onBlur={handleBlur}
@@ -72,31 +109,28 @@ export const BookingDetail = (props) => {
                                   <select 
                                       name='paymentType'
                                       id='paymentType' 
-                                      className='form-control' 
+                                      className='form-control InputLength' 
                                       value={values.paymentType}
                                       onBlur={handleBlur}
                                       onChange={handleChange}>
-                                          <option value="Cash On delivery">Cash On Deivery</option>
+                                          <option value="Pay In Cash">Pay In Cash</option>
                                           <option value="Bkash">Bkash</option>
                                           <option value="Nagad">Nagad</option>
                                           <option value="Visa Card">Visa Card</option>
                                           <option value="Bank Account">Bank Account</option>
                                   </select>
                                   <br />
-                                  {/* <Button 
-                                      type='submit'
-                                      style={{ backgroundColor: "#D70F64",
-                                               marginRight: "2rem" }}
-                                      disabled={order} 
-                                      >Place Order
-                                  </Button>
-                                  <Button 
-                                      color='secondary'
-                                      className="ml-1" 
-                                      onClick={this.goBack} 
-                                      >cancel
-                                  </Button> */}
-                              {/* {this.state.checkout && <Navigate to='/' replace="true"/>} */}
+                                  <div className='BookingBtnPosition2'>
+                                        
+                                        <button type='submit' className='BookBtn2'>Book Now</button>
+                                        
+                                        <Link
+                                            to='/rooms'
+                                        >
+                                            <button className='CancelBtn2'>Cancel</button>
+                                        </Link>
+                                    </div>
+                                  
                           </form>
                         )}
                       </Formik>
@@ -106,8 +140,5 @@ export const BookingDetail = (props) => {
     )
 }
 
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookingDetail)

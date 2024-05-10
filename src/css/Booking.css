@@ -14,6 +14,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 .BookingInfoDisplay{
     border: 1px solid #A91D3A;
@@ -33,7 +34,59 @@ body::-webkit-scrollbar {
     border-radius: 12px;
     padding: 1rem;
 }
-@media screen and (min-width: 765px){
+.BookingInfoFrom {
+    width: 370px;
+    border: 1px solid #A91D3A;
+    border-radius: 12px;
+    margin: .5rem;
+    padding: 1rem;
+    padding-top: 1rem;
+}
+.BookingInfoFromTitle {
+    color: #A91D3A;
+    margin-bottom: 2rem;
+}
+.errorMsg{
+    text-align: left;
+}
+.BookingBtnPosition2 {
+    width: 300px;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    margin-left: 1rem;
+    align-items:center
+
+}
+.BookBtn2, .CancelBtn2 {
+    width: 120px;
+    font-size: 1.2rem;
+    margin-right: 5px ;
+    padding: 5px;
+    border: 0px;
+    border-radius: 12px;
+}
+.BookBtn2:disabled {
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+.BookBtn2 {
+    background: #A91D3A;
+    color: #fff;
+}
+.CancelBtn2 {
+    background: #646464;
+    color: #fff;
+}
+.BookBtn2:hover {
+    background: #151515;
+    transition: all 0.3s;
+}
+.CancelBtn2:hover {
+    background: #151515;
+    transition: all 0.3s;
+}
+@media screen and (min-width: 1280px){
     .h2Font,
     .h4Font,
     .h5Font,
@@ -43,10 +96,11 @@ body::-webkit-scrollbar {
     font-size: 80.5%*1rem;
 }
     .BookingInfoContainer{
-        width: 1024px;
-        margin-left: 15%;
+        width: 100%;
+        margin-left: 5%;
         flex-direction: row;
         justify-content: flex-start;
+        margin-top: 2rem;
     }
     .BookingInfoDisplay{
         width: 700px;
@@ -54,6 +108,23 @@ body::-webkit-scrollbar {
     }
     .BookingImage {
         width: 650px;
+    }
+    .BookingInfoFrom {
+        width: 700px;
+        align-self: flex-start;
+    }
+    .BookingBtnPosition2{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .BookBtn2, .CancelBtn2 {
+        width: 150px;
+        font-size: 20px;
+        margin-left: 5px ;
+        margin-right: 5px ;
+        padding: 5px;
+        border: 0px;
+        border-radius: 12px;
     }
     
 }
