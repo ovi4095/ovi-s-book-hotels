@@ -1,0 +1,166 @@
+/* Show Booking List Container */
+.BookingListContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:center;
+    align-items: center;
+
+}
+
+/* Show Booking List Component */
+.BookingContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: 2px solid #A91D3A;
+    justify-content: center;
+    
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+.BookingImage {
+    width: 320px;
+}
+.BookingAllInfo {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: .5rem;
+    text-align: left;
+    border: 1px solid #A91D3A;
+    border-radius: 12px;
+}
+.BookingRoomInfo, .BookingCustomerInfo {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: .1rem;
+    padding: .5rem;
+    border: 1px solid #A91D3A;
+    border-radius: 12px;
+    background-color: rgba(197, 201, 204, 0.559);
+}
+.ControlBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.BookingBtn {
+    font-size: 1.1rem;
+    margin: .1rem;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.BookingCancel {
+    background-color: #A91D3A;
+}
+.BookingCancel:hover {
+    background-color: #151515;
+    transition: all 0.3s;
+}
+.GoBack {
+    background-color: dimgray;
+}
+.GoBack:hover {
+    background-color: #151515;
+    transition: all 0.3s;
+}
+.H1Fonts{
+    font-size: 1.4rem;
+}
+.H2Fonts{
+    font-size: 1.3rem;
+}
+.H3Fonts{
+font-size: 1rem;
+}
+.H4Fonts{
+font-size: 1rem;
+}
+.H5Fonts{
+font-size: .9rem;
+}
+.H6Fonts{
+font-size: .7rem;
+}
+@media screen and (min-width: 765px) {
+    .BookingContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    
+}
+@media screen and (min-width: 1024px) {
+    .BookingContainer {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+    }
+    .BookingImage {
+        width: 180px;
+        margin-top: .5rem;
+    }
+    .BookingAllInfo {
+        width: 90%;
+        flex-direction: row;
+    }
+    .BookingRoomInfo{
+        width: 50%;
+    }
+    .BookingCustomerInfo {
+        width: 50%;
+        margin-left: 2rem;
+    }
+    .ControlBtn {
+        width: 280px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-evenly;
+    }
+    .BookingBtn {
+        font-size: 0.9rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .H1Fonts{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .H2Fonts{
+        font-size: 1.1rem;
+    }
+    .H3Fonts{
+    font-size: .9rem;
+    }
+    .H4Fonts{
+    font-size: .7rem;
+    }
+    .H5Fonts{
+    font-size: .7rem;
+    }
+    .H6Fonts{
+    font-size: .5rem;
+    }
+}
+@media screen and (min-width: 1455px) {
+    .BookingContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 3rem;
+        margin-bottom: 1rem;
+    }
+    .BookingAllInfo {
+        flex-direction: row;
+    }
+}

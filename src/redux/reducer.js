@@ -67,28 +67,56 @@ const bookedReducer = (bookedState = { isLoading: true, booked: []}, action) => 
     }
 }
 
-const commentReducer = (commentState = {isLoading: true, comments:[]}, action) => {
-    switch(action.type) {
-        case actionTypes.LOAD_COMMENTS:
-            let comments = [];
+const bookingReducer = (bookingState = { isLoading: true, booking: []}, action) => {
+    switch (action.type) {
+        case actionTypes.BOOKING_LOADING:
+            return {
+                ...bookingState,
+                isLoading: true,
+                booking: []
+            }
+        case actionTypes.LOAD_BOOKING:
+            // console.log('bookingState Payload:', action.payload)
+            let booking = [];
             for (let key in action.payload) {
-                comments.push({
+                booking.push({
                     ...action.payload[key],
+                    key: key,
                 })
             }
             return {
-                ...commentState,
-                comments: comments,
-                isLoading: false
-            }
-        case actionTypes.COMMENTS_LOADING:
-            return {
-                ...commentState,
-                isLoading: true,
-                comments: []
+                ...bookingState,
+                isLoading: false,
+                booking: booking
             }
         default:
-            return commentState;
+            return bookingState;
+    }
+}
+
+const reviewReducer = (reviewState = {isLoading: true, reviews:[]}, action) => {
+    switch(action.type) {
+        case actionTypes.LOAD_REVIEWS:
+            let reviews = [];
+            for (let key in action.payload) {
+                reviews.push({
+                    ...action.payload[key],
+                })
+            }
+            // console.log("Review in Reducer:", reviews)
+            return {
+                ...reviewState,
+                reviews: reviews,
+                isLoading: false
+            }
+        case actionTypes.REVIEWS_LOADING:
+            return {
+                ...reviewState,
+                isLoading: true,
+                reviews: []
+            }
+        default:
+            return reviewState;
     }
 }
 
@@ -129,7 +157,8 @@ const authReducer = (authState = {token: null, userId: null, authLoading: false,
 export const Reducer = combineReducers({
     categories: categoryReducer,
     rooms: roomReducer,
-    comments: commentReducer,
+    reviews: reviewReducer,
     booked: bookedReducer,
+    booking: bookingReducer,
     auth: authReducer,
 })

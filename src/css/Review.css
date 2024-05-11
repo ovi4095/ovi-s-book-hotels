@@ -1,0 +1,79 @@
+.ReviewFormHolder {
+    border: 1px solid #A91D3A;
+    border-radius: 12px;
+    width: 370px;
+}
+.ReviewForm {
+    border: 1px solid #A91D3A;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+.ReviewForm input {
+    margin-bottom: -.5rem;
+}
+.ReviewBtn {
+    margin-top: -2rem;
+    background-color: #A91D3A;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    width: 10rem;
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin-right: 1rem;
+}
+
+/* View Review */
+.ReviewContainer, .ReviewContainerHolder,.ReviewCard {
+    margin: 1rem;
+    border: 1px solid #A91D3A;
+    border-radius: 12px;
+}
+.ReviewContainerHolder {
+    margin: 1rem;
+    width: 370px;
+}
+.ReviewCard {
+    text-align: left;
+}
+.Name {
+    color: #A91D3A;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.Review {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+.Date {
+    margin-left: 1rem;
+    font-size: .8rem;
+}
+@media screen and (min-width: 765px) {
+    .ReviewForm {
+        width: 91.5vmax;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .ReviewFormHolder{
+        width: 94vmax;
+    }
+    .ReviewForm {
+        width: 91.5vmax;
+    }
+    .ReviewBtn {
+        font-size: 1rem;
+        align-self: flex-start;
+    }
+    .ReviewContainerHolder {
+        width: 94vmax;
+    }
+    .ReviewContainer {
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width: 1455px) {
+
+}
+

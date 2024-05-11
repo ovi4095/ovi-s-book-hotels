@@ -48,6 +48,9 @@ body::-webkit-scrollbar {
 }
 .errorMsg{
     text-align: left;
+    font-size: 14px;
+    margin-top: .8rem;
+    color: #A91D3A;
 }
 .BookingBtnPosition2 {
     width: 300px;

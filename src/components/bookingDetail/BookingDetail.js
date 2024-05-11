@@ -3,13 +3,14 @@ import '../../css/Booking.css'
 import { connect } from 'react-redux'
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { Formik } from 'formik'
-import { addBooking } from '../../redux/actionCreators'
+import { addBooking, fetchBooking } from '../../redux/actionCreators'
 
 const mapStateToProps = (state) => ({})
 
 const mapDispatchToProps = dispatch =>{
     return {
-        addBooking: (booking, booked) => dispatch(addBooking(booking, booked))
+        addBooking: (booking, booked) => dispatch(addBooking(booking, booked)),
+        fetchBooking: () => dispatch(fetchBooking())
     }
 }
 export const BookingDetail = (props) => {
@@ -21,25 +22,31 @@ export const BookingDetail = (props) => {
             const booking = {
                 room: bookingInfo.title,
                 roomId: bookingInfo.roomId,
+                image: bookingInfo.image,
                 hotel: bookingInfo.hotel,
                 quantity: bookingInfo.quantity,
-                price: bookingInfo.price,
+                price: bookingInfo.quantity,
                 address: value.address,
                 phone: value.phone,
                 payment: value.paymentType,
                 key: Math.random().toString(),
-                date: new Date().toString()
+                date: new Date().toString(),
+                uniqKey: bookingInfo.title+bookingInfo.roomId+bookingInfo.quantity+value.address+value.paymentType+new Date().toString()
             }
             const booked = {
                 booked: bookingInfo.quantity,
                 roomId: bookingInfo.roomId,
                 key: Math.random().toString(),
+                uniqKey: bookingInfo.title+bookingInfo.roomId+bookingInfo.quantity+value.address+value.paymentType+new Date().toString()
             }
 
             // console.log("Booking:", booking)
             // console.log("Booked:", booked)
-            props.addBooking(booking, booked)
-            navigate('/rooms')
+            props.addBooking(booking, booked);
+            setTimeout(() => {
+                props.fetchBooking();
+            }, 500)
+            navigate('/booking');
             
 
     }

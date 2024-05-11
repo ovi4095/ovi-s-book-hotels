@@ -7,9 +7,12 @@ export const ROOMS_LOADING = 'ROOMS_LOADING';
 export const LOAD_BOOKED = 'LOAD_BOOKED';
 export const BOOKED_LOADING = 'BOOKED_LOADING';
 
-export const ADD_COMMENT = 'ADD_COMMENT';
-export const LOAD_COMMENTS = 'LOAD_COMMENTS';
-export const COMMENTS_LOADING = 'COMMENTS_LOADING';
+export const LOAD_BOOKING = 'LOAD_BOOKING';
+export const BOOKING_LOADING = 'BOOKING_LOADING';
+
+export const ADD_REVIEW = 'ADD_REVIEW';
+export const LOAD_REVIEWS = 'LOAD_REVIEWS';
+export const REVIEWS_LOADING = 'REVIEWS_LOADING';
 
 
 export const AUTH_SUCCESS = 'AUTH_SUCCESS';

@@ -3,6 +3,8 @@ import '../../css/Room.css'
 import { connect } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom'
 import { fetchBooked, fetchRooms } from '../../redux/actionCreators'
+import PostReview from '../reviews/PostReview'
+import ViewReview from '../reviews/ViewReview'
 
 const mapStateToProps = state => {
     return {
@@ -121,8 +123,8 @@ export const RoomDetail = (props) => {
                             </div>
                         </div>
                     </section>
-                    <section><h3>section 2</h3></section>
-                    <section><h3>section 3</h3></section>
+                    <section><PostReview room={room} key={room.key}/></section>
+                    <section><ViewReview room={room} key={room.key+"review"}/></section>
                 </div>
             )
         }
