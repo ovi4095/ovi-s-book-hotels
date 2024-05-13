@@ -72,16 +72,13 @@ display: flex;
 justify-content: center;
 }
 .category--img-flex {
-display: grid;
-align-items: center;
-margin-left: 15%;
-width: 70%;
-text-align: justify;
-grid-template-columns: repeat(1, 1fr 1fr);
-gap: 2rem;
-align-items: flex-start;
-/* margin-top: 5rem; */
-/* margin-bottom: 5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    width: 70%;
+    text-align: justify;
 }
 
 /* @media screen and (max-width: 765px) {
@@ -216,4 +213,27 @@ align-items: flex-start;
         font-size: 30px;
     }
     
+}
+
+@media screen and (min-width: 1024px) {
+    .flex-category, .flex-category-reverse {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .flex-category{
+        flex-direction: row;
+    }
+    .flex-category-reverse {
+        flex-direction: row-reverse;
+    }
+    .flex-category .serviceTitle {
+        margin-left: 1rem;
+    }
+    .flex-category .serviceDetail {
+        margin-left: 1rem;
+    }
+    .serviceDetail {
+        width: 90%;
+    }
 }

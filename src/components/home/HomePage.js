@@ -83,45 +83,80 @@ const HomePage = (props) => {
                                     <p className='serviceHeaderDetail'>You can browse rooms form different categories in our website </p>
                 </div>
                 <div className='category--img-flex'>
-                    <div>
-                        <img className='serviceImage' src={Service1} alt='3 Star Hotel' />
+                    <div className='flex-category'>
+                        <div>
+                            <Link
+                                to='/rooms'
+                                state={{category: 'Five star hotel'}}
+                            >
+                                <img className='serviceImage' src={Service2} alt='5 Star Hotel' />
+                            </Link>
+                        </div>
+                        <div>
+                            <h3 className='serviceTitle'>Five Star Hotel</h3>
+                            <p className='serviceDetail'>Provides luxurious rooms with high-end amenities like spa services, gourmet dining
+                            options, concierge service, and possibly a business center.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 className='serviceTitle'>Three Star Hotel</h3>
-                        <p className='serviceDetail'>Offers comfortable rooms with basic amenities, such as TV, Wi-Fi, and room service.
-                         Has a restaurant serving meals, and may include a fitness center or pool.</p>
+                    <div className='flex-category-reverse'>
+                        <div>
+                            <Link
+                                to='/rooms'
+                                state={{category: 'Three star hotel'}}
+                            >
+                                <img className='serviceImage' src={Service1} alt='3 Star Hotel' />
+                            </Link>
+                        </div>
+                        <div>
+                            <h3 className='serviceTitle'>Three Star Hotel</h3>
+                            <p className='serviceDetail'>Offers comfortable rooms with basic amenities, such as TV, Wi-Fi, and room service.
+                            Has a restaurant serving meals, and may include a fitness center or pool.</p>
+                        </div>
                     </div>
-                    <div>
-                        <img className='serviceImage' src={Service2} alt='5 Star Hotel' />
+                    <div className='flex-category'>
+                        <div>
+                            <Link
+                                to='/rooms'
+                                state={{category: 'Guest House'}}
+                            >
+                                <img className='serviceImage' src={Service3} alt='Guest House' />
+                            </Link>
+                        </div>
+                        <div>
+                            <h3 className='serviceTitle'>Guest House</h3>
+                            <p className='serviceDetail'>Provides cozy accommodations with a personal touch. Offers breakfast and sometimes 
+                            other meals, shared common areas, and a homely atmosphere.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 className='serviceTitle'>Five Star Hotel</h3>
-                        <p className='serviceDetail'>Provides luxurious rooms with high-end amenities like spa services, gourmet dining
-                          options, concierge service, and possibly a business center.</p>
+                    <div className='flex-category-reverse'>
+                        <div>
+                            <Link
+                                to='/rooms'
+                                state={{category: 'Resort'}}
+                            >
+                                <img className='serviceImage' src={Service4} alt='Resort' />
+                            </Link>
+                        </div>
+                        <div>
+                            <h3 className='serviceTitle'>Resort</h3>
+                            <p className='serviceDetail'>Offers a wide range of recreational facilities such as swimming pools, spa, sports  
+                            facilities,and entertainment activities. Also includes restaurants, bars, and possibly beach or mountain access.</p>
+                        </div>
                     </div>
-                    <div>
-                        <img className='serviceImage' src={Service3} alt='Guest House' />
-                    </div>
-                    <div>
-                        <h3 className='serviceTitle'>Guest House</h3>
-                        <p className='serviceDetail'>Provides cozy accommodations with a personal touch. Offers breakfast and sometimes 
-                        other meals, shared common areas, and a homely atmosphere.</p>
-                    </div>
-                    <div>
-                        <img className='serviceImage' src={Service4} alt='Resort' />
-                    </div>
-                    <div>
-                        <h3 className='serviceTitle'>Resort</h3>
-                        <p className='serviceDetail'>Offers a wide range of recreational facilities such as swimming pools, spa, sports  
-                        facilities,and entertainment activities. Also includes restaurants, bars, and possibly beach or mountain access.</p>
-                    </div>
-                    <div>
-                        <img className='serviceImage' src={Service6} alt='Hostel' />
-                    </div>
-                    <div>
-                        <h3 className='serviceTitle'>Hostel</h3>
-                        <p className='serviceDetail'>Budget-friendly accommodations with shared dormitory-style rooms or private rooms. Provides
-                         communal kitchen, social areas, and often organizes activities for guests to meet and mingle.</p>
+                    <div className='flex-category'>
+                        <div>
+                            <Link
+                                to='/rooms'
+                                state={{category: 'Hostel'}}
+                            >
+                                <img className='serviceImage' src={Service6} alt='Hostel' />
+                            </Link>
+                        </div>
+                        <div>
+                            <h3 className='serviceTitle '>Hostel</h3>
+                            <p className='serviceDetail'>Budget-friendly accommodations with shared dormitory-style rooms or private rooms. Provides
+                            communal kitchen, social areas, and often organizes activities for guests to meet and mingle.</p>
+                        </div>
                     </div>
                 </div>
             </section>

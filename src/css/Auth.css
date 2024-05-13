@@ -1,0 +1,66 @@
+.AuthHolder {
+    height: 30rem;
+}
+.AuthContainer {
+    text-align: left;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    margin: 5rem 5rem;
+    padding: 2rem 3rem;
+    border: 2px solid rgb(237, 231, 231);
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px rgba(105, 90, 205, 0.572);
+}
+.AuthError {
+    margin: .25rem;
+    padding: .25rem;
+    text-align: left;
+    font-size: 10px;
+    color: red;
+}
+.btnPossion {
+    margin-top: 1rem;
+    padding: 1rem 1.8rem;
+    border: none;
+    font-size: 12px;
+    border-radius: 25px;
+    color: white;
+    background: var(--color-primary);
+
+}
+.btnPossion:hover {
+    background: #151515;
+    transition: all .3s;
+}
+.AuthBtnpossition {
+    display: flex;
+    justify-content: space-between;
+}
+.AuthMode {
+    margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 14.5px;
+}
+.AuthMode:hover {
+    color: #151515;
+    transition: color .2s;
+}
+.ErroMsg {
+    height: fit-content;
+}
+@media screen and (min-width: 765px) {
+    .AuthHolder {
+        height: 33rem;
+    }
+    .AuthContainer {
+        margin: 5rem 3rem;
+    }
+    .AuthMode {
+        font-size: 16px;
+    }
+    .btnPossion {
+        font-size: 16px;
+    }
+}

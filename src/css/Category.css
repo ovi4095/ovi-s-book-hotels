@@ -1,0 +1,23 @@
+.CategoryHolder {
+    display: flex;
+    flex-direction: column;
+    
+}
+.CategoryContainer {
+    margin: 1rem;
+    
+}
+
+@media screen and (min-width:1455px ) {
+    .CategoryHolder {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 3rem 2rem 3rem;
+    }
+    .CategoryContainer {
+        margin: 1rem;
+    }
+}
+@media screen and (min-width: 1920px) {
+    
+}

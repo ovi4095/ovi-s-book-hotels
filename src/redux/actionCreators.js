@@ -2,6 +2,29 @@ import axios from 'axios'
 import * as actionTypes from './actionTypes'
 import { baseUrl } from './baseUrl'
 
+// Category Section
+
+export const loadCategories = categories => ({
+    type: actionTypes.LOAD_CATEGORIES,
+    payload: categories
+})
+
+export const categoriesLoading = () => ({
+    type: actionTypes.CATEGORIES_LOADING
+})
+
+export const fetchCategories = () => {
+    return dispatch => {
+        dispatch(categoriesLoading());
+        axios.get(baseUrl+"category.json")
+        .then(response => response.data)
+        .then(categories => dispatch(loadCategories(categories)));
+        }
+        
+}
+
+
+
 // Room Section
 
 export const loadRooms = rooms => ({
@@ -26,8 +49,10 @@ export const fetchRooms = () => {
 
 // Booking Section
 
-export const addBooking = (booking, booked) => dispatch => {
-    axios.post(baseUrl+'booking.json', booking)
+export const addBooking = (booking, booked) => (dispatch, getState) => {
+    let token = getState().auth.token;
+    let userId = getState().auth.userId;
+    axios.post(baseUrl+`${userId}/booking.json?auth=${token}`, booking)
     .then(response => response.data)
     .catch(error => console.log(error))
     
@@ -46,7 +71,7 @@ export const bookedLoading = () => ({
 })
 
 export const fetchBooked = () => {
-    return dispatch => {
+    return (dispatch) => {
         dispatch(bookedLoading());
         axios.get(baseUrl+"booked.json")
         .then(response => response.data)
@@ -67,9 +92,12 @@ export const bookingLoading = () => ({
 })
 
 export const fetchBooking = () => {
-    return dispatch => {
+    return (dispatch, getState) => {
+        let token = getState().auth.token;
+        let userId = getState().auth.userId;
+        console.log("User Id", userId,token)
         dispatch(bookingLoading());
-        axios.get(baseUrl+"booking.json")
+        axios.get(baseUrl+`${userId}/booking.json?auth=${token}`)
         .then(response => response.data)
         .then(booking => dispatch(loadBooking(booking)))
         .catch(error => console.log("DATA BASE ERROR:", error));
@@ -77,8 +105,11 @@ export const fetchBooking = () => {
         
 }
 
-export const removeBooking = (bookingKey, bookedKey) => (dispatch) =>{
-    axios.delete(baseUrl+`booking/${bookingKey}.json`)
+export const removeBooking = (bookingKey, bookedKey) => (dispatch, getState) =>{
+    let token = getState().auth.token;
+    let userId = getState().auth.userId;
+    
+    axios.delete(baseUrl+`${userId}/booking/${bookingKey}.json?auth=${token}`)
     .then(() => alert("Canceled Booking Successfully!"))
     .catch((error) => {
         setTimeout(()=>{

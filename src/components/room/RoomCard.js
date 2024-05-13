@@ -1,21 +1,37 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../../css/Room.css'
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap'
 import ClampLines from 'react-clamp-lines';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
+
 
 const RoomCard = (props) => {
-    const navigate = useNavigate()
-    // const [toggleHover, setToggleHover] = useState(false)
-    
-    // const toggleHoverHandler = () => {
-    //     setToggleHover(!toggleHover)
-    // }
-
-    // const hoverColor = toggleHover === false? "#A91D3A": "#151515";
-    // console.log("toggle:", hoverColor)
   return (
     <div className='RoomPosition'>{props.rooms.map(room =>{
+        const selectedBooked = props.booked.filter(booked => booked.roomId === room.roomId)
+        console.log("Booked in Cart:",props.booked)
+        let totalBooked = 0;
+        selectedBooked.forEach(obj => {
+        totalBooked+= obj.booked;
+        })
+        const price = room.roomQuantity === totalBooked? <strong className='WarningText'>Room Not Available.</strong> :
+        <p><strong>Price:</strong> {room.price} .Tk</p>;
+        const seeDetailBtn = room.roomQuantity === totalBooked?(
+                            <Button 
+                                className='CardBtn'
+                                disabled={true}
+                                >
+                                See Detail
+                            </Button>):(
+                        <Link to='/roomDetail' state={{roomId: room.roomId}}>
+                            <button 
+                                className='CardBtn'
+                                >
+                                See Detail
+                            </button>
+                        </Link>
+                        );
         return (
             <Card
                 style={{
@@ -45,7 +61,9 @@ const RoomCard = (props) => {
                     >
                     Hotel Name:{room.hotelName}
                     </CardSubtitle>
-                    <CardText>
+                    <CardText
+                        style={{color:'#A91D3A'}}
+                    >
                        <strong>Description:</strong> 
                        <ClampLines
                             text={room.description}
@@ -61,20 +79,12 @@ const RoomCard = (props) => {
                         style={{
                             fontSize: 20,
                             marginBottom: 20,
+                            textAlign:'center'
                         }}    
                     >
-                       <strong>Price:</strong> {room.price} .Tk
+                       {price}
                     </CardSubtitle>
-                    <Link to='/roomDetail' state={{roomId: room.roomId}}>
-                        <button 
-                            className='CardBtn'
-                            onClick={() => {
-                            return    
-                            }}
-                            >
-                            See Detail
-                        </button>
-                    </Link>
+                    {seeDetailBtn}
                 </CardBody>
             </Card>
         )}

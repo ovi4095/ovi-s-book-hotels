@@ -1,0 +1,53 @@
+/* Error404.css */
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .error-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .error-text h1 {
+    font-size: 8em;
+    margin: 0;
+    color: var(--color-primary); /* Red color */
+  }
+  
+  .error-text h2 {
+    margin-top: 0;
+    color: #333; /* Dark color */
+  }
+  
+  .error-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 4s infinite;
+  }
+
+  .imageSize {
+    width: 150px;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

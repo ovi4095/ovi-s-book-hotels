@@ -28,7 +28,6 @@ export const Header = (props) => {
                 <NavItem ><Link className='nav-link' to='/about' >About</Link></NavItem>
                 <NavItem ><Link className='nav-link' to='/rooms' >Rooms</Link></NavItem>
                 <NavItem ><Link className='nav-link' to='/category' >Category</Link></NavItem>
-                <NavItem ><Link className='nav-link' to='/booking' >Booking</Link></NavItem>
                 <NavItem ><Link className='nav-link' to='/login' >Log in</Link></NavItem>    
         </Nav> 
       ):(

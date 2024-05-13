@@ -1,0 +1,701 @@
+{
+  "bookhotels": {
+      "booked": {
+          "-Nxc-a_yV35d91aPOC3z": {
+              "booked": 1,
+              "key": "0.7568995522503537",
+              "roomId": 5,
+              "uniqKey": "Four Seat Bed Room51KeraniganjNagadSat May 11 2024 20:15:38 GMT+0600 (Bangladesh Standard Time)"
+          }
+      },
+      "booking": {
+          "-Nxc-a_vsqQT7hYmNv60": {
+              "address": "Keraniganj",
+              "date": "Sat May 11 2024 20:15:38 GMT+0600 (Bangladesh Standard Time)",
+              "hotel": "Lovely Hostel",
+              "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/test%20image%2FFour%20Seat%20Bed%20Room.png?alt=media&token=8519219f-a281-4cfe-a9bb-478ff7db023d",
+              "key": "0.5623888011122997",
+              "payment": "Nagad",
+              "phone": "01884394257",
+              "price": 1,
+              "quantity": 1,
+              "room": "Four Seat Bed Room",
+              "roomId": 5,
+              "uniqKey": "Four Seat Bed Room51KeraniganjNagadSat May 11 2024 20:15:38 GMT+0600 (Bangladesh Standard Time)"
+          }
+      },
+      "reviews": {
+          "-Nxd2omqMIbyqh9UZMQs": {
+              "date": "Sun May 12 2024 01:09:20 GMT+0600 (Bangladesh Standard Time)",
+              "name": "Al Amin Ovi",
+              "review": "Nice Room",
+              "roomId": 5
+          },
+          "-Nxd52ajk_7ojQrdwOeU": {
+              "date": "Sun May 12 2024 01:19:06 GMT+0600 (Bangladesh Standard Time)",
+              "name": "Ovi",
+              "review": "Beautiful Room",
+              "roomId": 5
+          },
+          "-Nxd59nhUTmVw-tFH5HY": {
+              "date": "Sun May 12 2024 01:19:35 GMT+0600 (Bangladesh Standard Time)",
+              "name": "Md. Abu Yeadi",
+              "review": "Wow Luxri Room",
+              "roomId": 2
+          },
+          "-Nxd5PfYv_eOo5CfQXH8": {
+              "date": "Sun May 12 2024 01:20:40 GMT+0600 (Bangladesh Standard Time)",
+              "name": "Ayesha ",
+              "review": "The Room was very Relaxing",
+              "roomId": 1
+          },
+          "-Nxd5aWEU_mJKKvakmq4": {
+              "date": "Sun May 12 2024 01:21:29 GMT+0600 (Bangladesh Standard Time)",
+              "name": "Ornon Saha",
+              "review": "Valoi Resort ta",
+              "roomId": 3
+          },
+          "-Nxd5l3EgFphYrvRJvds": {
+              "date": "Sun May 12 2024 01:22:12 GMT+0600 (Bangladesh Standard Time)",
+              "name": "Abir",
+              "review": "Emon Guest House aro Dorkar",
+              "roomId": 4
+          },
+          "-NxdE1leervf-kar7j79": {
+              "date": "Sun May 12 2024 01:58:21 GMT+0600 (Bangladesh Standard Time)",
+              "name": "Hridoy",
+              "review": "Nice and Beautiful Room ",
+              "roomId": 5
+          }
+      },
+      "rooms": [
+        {
+            "category": "Five star hotel",
+            "description": "Situated in the heart of the city, the luxurious Ritz-Carlton offers unparalleled comfort and elegance. Each room is meticulously designed with modern amenities and stunning views of the city skyline. Indulge in the ultimate relaxation with our spa services and fine dining options. Whether you're traveling for business or pleasure, the Ritz-Carlton guarantees an unforgettable experience.",
+            "hotelName": "The Ritz-Carlton",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FExecutive%20Suite%20The%20Ritz-Carlton.png?alt=media&token=f1491b89-400b-42cf-8a56-a5567f01c9eb",
+            "price": 21000,
+            "roomId": 1,
+            "roomQuantity": 18,
+            "title": "Executive Suite"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Experience true luxury at the iconic Waldorf Astoria. Our spacious rooms feature elegant decor and modern amenities to ensure a comfortable stay. Enjoy breathtaking views of the city from your private balcony, or unwind in our world-class spa. With impeccable service and attention to detail, the Waldorf Astoria is the perfect choice for discerning travelers.",
+            "hotelName": "Waldorf Astoria",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FGrand%20Deluxe%20Room%20Waldorf%20Astoria.png?alt=media&token=1b90e7f5-7b99-4307-be9d-a53b56ea4a70",
+            "price": 18000,
+            "roomId": 2,
+            "roomQuantity": 20,
+            "title": "Grand Deluxe Room"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Nestled in a serene oasis in the heart of the city, the Four Seasons Hotel offers a luxurious retreat for travelers. Our elegantly appointed rooms feature plush bedding, marble bathrooms, and stunning views of the surrounding landscape. Indulge in gourmet cuisine at our award-winning restaurants, or relax by the pool with a signature cocktail. With impeccable service and world-class amenities, the Four Seasons Hotel is the ultimate destination for luxury travelers.",
+            "hotelName": "Four Seasons Hotel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FPremier%20King%20Room%20Four%20Seasons%20Hotel.png?alt=media&token=73a2aa84-07be-463e-b198-89cdda1aa4a2",
+            "price": 25000,
+            "roomId": 3,
+            "roomQuantity": 15,
+            "title": "Premier King Room"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Discover unparalleled luxury at the Mandarin Oriental, where every detail is designed to exceed your expectations. Our spacious rooms offer panoramic views of the city skyline, along with modern amenities and elegant furnishings. Indulge in a world-class dining experience at our Michelin-starred restaurant, or unwind with a massage at our award-winning spa. Whether you're traveling for business or pleasure, the Mandarin Oriental promises an unforgettable stay.",
+            "hotelName": "Mandarin Oriental",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FPresidential%20Suite%20Five%20star%20hotel.png?alt=media&token=106d52e8-d545-46c4-b9e7-5c54c6dae8f9",
+            "price": 22000,
+            "roomId": 4,
+            "roomQuantity": 22,
+            "title": "Presidential Suite"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Experience the height of luxury at the St. Regis, where every detail is meticulously crafted to ensure an unforgettable stay. Our spacious rooms feature elegant decor, plush bedding, and state-of-the-art amenities. Indulge in a culinary journey at our Michelin-starred restaurant, or relax by the pool with a refreshing cocktail. With unparalleled service and attention to detail, the St. Regis offers a truly exceptional experience.",
+            "hotelName": "The St. Regis",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FRoyal%20Suite%20The%20St.%20Regis.png?alt=media&token=31d5de4d-8525-401d-b081-193f43a292e5",
+            "price": 20000,
+            "roomId": 5,
+            "roomQuantity": 19,
+            "title": "Royal Suite"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Escape to paradise at the Shangri-La, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our signature restaurants, or unwind with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Shangri-La promises an unforgettable getaway.",
+            "hotelName": "Shangri-La",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FOcean%20View%20Suite%20Shangri-La.png?alt=media&token=67a56410-52bd-4252-ab07-6a51e68d8088",
+            "price": 23000,
+            "roomId": 6,
+            "roomQuantity": 17,
+            "title": "Ocean View Suite"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Experience the epitome of luxury at the Peninsula, where every detail is meticulously crafted to ensure an unparalleled stay. Our spacious rooms feature elegant decor, plush bedding, and state-of-the-art amenities. Indulge in a culinary journey at our Michelin-starred restaurants, or relax by the rooftop pool with panoramic views of the city skyline. With legendary service and attention to detail, the Peninsula offers a truly extraordinary experience.",
+            "hotelName": "The Peninsula",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FGrand%20Premier%20Room%20%20The%20Peninsula.png?alt=media&token=89e92ec3-6785-4e8f-a90f-3a5cb78c3c69",
+            "price": 24000,
+            "roomId": 7,
+            "roomQuantity": 16,
+            "title": "Grand Premier Room"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Escape to a tropical paradise at the Raffles, where luxury meets tranquility in a lush garden setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the surrounding landscape. Indulge in a culinary journey at our award-winning restaurants, or relax by the pool with a refreshing cocktail. Whether you're seeking adventure or relaxation, the Raffles promises an unforgettable retreat.",
+            "hotelName": "Raffles",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FGarden%20View%20Suite%20%20Raffles.png?alt=media&token=ef5582f4-0ea2-4aab-915c-1534aef908f0",
+            "price": 20000,
+            "roomId": 8,
+            "roomQuantity": 21,
+            "title": "Garden View Suite"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Experience the ultimate in luxury at the Fairmont, where every detail is designed to exceed your expectations. Our spacious rooms offer panoramic views of the city skyline, along with modern amenities and elegant furnishings. Indulge in a world-class dining experience at our Michelin-starred restaurant, or unwind with a massage at our award-winning spa. Whether you're traveling for business or pleasure, the Fairmont promises an unforgettable stay.",
+            "hotelName": "Fairmont",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FSignature%20Suite%20%20Fairmont.png?alt=media&token=70bb9a86-3ff3-4980-9a11-d3b3a08c1867",
+            "price": 19000,
+            "roomId": 9,
+            "roomQuantity": 23,
+            "title": "Signature Suite"
+          },
+          {
+            "category": "Five star hotel",
+            "description": "Escape to paradise at the JW Marriott, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our signature restaurants, or unwind with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the JW Marriott promises an unforgettable getaway.",
+            "hotelName": "JW Marriott",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hotel%2FBeachfront%20Villa%20JW%20Marriott.png?alt=media&token=9414bb2a-48bf-41c5-b94f-8867633f58a8",
+            "price": 23000,
+            "roomId": 10,
+            "roomQuantity": 24,
+            "title": "Beachfront Villa"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Nestled in the heart of the city, the Park Plaza offers comfortable accommodations and modern amenities for travelers on a budget. Each room is tastefully decorated and equipped with all the essentials for a pleasant stay. Guests can enjoy a delicious breakfast buffet at our on-site restaurant before exploring the city's attractions. With friendly service and convenient location, the Park Plaza is the perfect choice for your next getaway.",
+            "hotelName": "Park Plaza",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F1.Park%20Plaza%20-%20Standard%20Room.png?alt=media&token=518c1e27-eb7e-43e0-99ea-a85ae029796e",
+            "price": 8000,
+            "roomId": 11,
+            "roomQuantity": 20,
+            "title": "Standard Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Experience comfort and convenience at the Holiday Inn, located in the bustling city center. Our spacious rooms feature modern amenities and cozy furnishings, ensuring a relaxing stay for every guest. Start your day with a complimentary breakfast at our on-site restaurant, or unwind with a refreshing drink at the bar. With attentive service and a central location, the Holiday Inn is the perfect choice for your next business trip or vacation.",
+            "hotelName": "Holiday Inn",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F2.%20Holiday%20Inn%20-%20Deluxe%20Room.png?alt=media&token=fe675538-2948-4382-900b-f607b6950cf5",
+            "price": 7000,
+            "roomId": 12,
+            "roomQuantity": 22,
+            "title": "Deluxe Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Conveniently located near the city's main attractions, the Courtyard by Marriott offers comfortable accommodations and modern amenities for travelers on a budget. Our spacious rooms feature plush bedding, flat-screen TVs, and complimentary Wi-Fi. Guests can enjoy a hearty breakfast at our on-site restaurant, or relax with a drink at the bar. With friendly service and a convenient location, the Courtyard by Marriott is the perfect choice for your next stay.",
+            "hotelName": "Courtyard by Marriott",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F3.Courtyard%20by%20Marriott%20-%20Standard%20Double%20Room.png?alt=media&token=c636cc38-65ff-4547-8718-a83e5dac4a3e",
+            "price": 6000,
+            "roomId": 13,
+            "roomQuantity": 18,
+            "title": "Standard Double Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Discover comfort and convenience at the Best Western, located in the heart of the city. Our spacious rooms feature modern amenities and cozy furnishings, ensuring a relaxing stay for every guest. Start your day with a complimentary breakfast at our on-site restaurant, or unwind with a dip in the pool. With attentive service and a central location, the Best Western is the perfect choice for your next business trip or vacation.",
+            "hotelName": "Best Western",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F4.Best%20Western%20-%20Standard%20Twin%20Room.png?alt=media&token=cd589541-dcb2-4ca4-ab84-3a890597d281",
+            "price": 5000,
+            "roomId": 14,
+            "roomQuantity": 16,
+            "title": "Standard Twin Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Experience comfort and convenience at the ibis, located in the heart of the city. Our modern rooms feature all the amenities you need for a comfortable stay, including free Wi-Fi and flat-screen TVs. Start your day with a delicious breakfast at our on-site restaurant, or unwind with a drink at the bar. With friendly service and a central location, the ibis is the perfect choice for your next visit to the city.",
+            "hotelName": "ibis",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F5.ibis%20-%20Standard%20Queen%20Room.png?alt=media&token=bf4638d3-31d7-48f0-8a93-1c887f838ac0",
+            "price": 4500,
+            "roomId": 15,
+            "roomQuantity": 24,
+            "title": "Standard Queen Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Conveniently located near the city's main attractions, the Novotel offers comfortable accommodations and modern amenities for travelers on a budget. Our spacious rooms feature plush bedding, flat-screen TVs, and complimentary Wi-Fi. Guests can enjoy a hearty breakfast at our on-site restaurant, or relax with a drink at the bar. With friendly service and a convenient location, the Novotel is the perfect choice for your next stay.",
+            "hotelName": "Novotel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F6.Novotel%20-%20Superior%20Room.png?alt=media&token=8d7e5535-3e4c-4b0e-a176-83485c32c4c2",
+            "price": 5500,
+            "roomId": 16,
+            "roomQuantity": 20,
+            "title": "Superior Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Discover comfort and convenience at the Radisson Blu, located in the heart of the city. Our spacious rooms feature modern amenities and cozy furnishings, ensuring a relaxing stay for every guest. Start your day with a complimentary breakfast at our on-site restaurant, or unwind with a dip in the pool. With attentive service and a central location, the Radisson Blu is the perfect choice for your next business trip or vacation.",
+            "hotelName": "Radisson Blu",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F7.Radisson%20Blu%20-%20Executive%20Room.png?alt=media&token=8a45f615-6096-48ed-987a-d5fe7eaaa6d6",
+            "price": 6500,
+            "roomId": 17,
+            "roomQuantity": 18,
+            "title": "Executive Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Experience comfort and convenience at the Hyatt Regency, located in the heart of the city. Our modern rooms feature all the amenities you need for a comfortable stay, including free Wi-Fi and flat-screen TVs. Start your day with a delicious breakfast at our on-site restaurant, or unwind with a drink at the bar. With friendly service and a central location, the Hyatt Regency is the perfect choice for your next visit to the city.",
+            "hotelName": "Hyatt Regency",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F8.Hyatt%20Regency%20-%20Club%20Room.png?alt=media&token=3d4e0136-6e46-4e96-8748-78f4236d6e44",
+            "price": 7500,
+            "roomId": 18,
+            "roomQuantity": 22,
+            "title": "Club Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Conveniently located near the city's main attractions, the Hilton Garden Inn offers comfortable accommodations and modern amenities for travelers on a budget. Our spacious rooms feature plush bedding, flat-screen TVs, and complimentary Wi-Fi. Guests can enjoy a hearty breakfast at our on-site restaurant, or relax with a drink at the bar. With friendly service and a convenient location, the Hilton Garden Inn is the perfect choice for your next stay.",
+            "hotelName": "Hilton Garden Inn",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F9.Hilton%20Garden%20Inn%20-%20Family%20Room.png?alt=media&token=7e0baf76-8160-4caf-beb2-1f4996c69f3a",
+            "price": 8500,
+            "roomId": 19,
+            "roomQuantity": 16,
+            "title": "Family Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Discover comfort and convenience at the ITC Hotels, located in the heart of the city. Our spacious rooms feature modern amenities and cozy furnishings, ensuring a relaxing stay for every guest. Start your day with a complimentary breakfast at our on-site restaurant, or unwind with a dip in the pool. With attentive service and a central location, the ITC Hotels is the perfect choice for your next business trip or vacation.",
+            "hotelName": "ITC Hotels",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F10.ITC%20Hotels%20-%20Suite%20Room.png?alt=media&token=2a0acc8e-ff22-4629-b952-50a18d2675ee",
+            "price": 9500,
+            "roomId": 20,
+            "roomQuantity": 24,
+            "title": "Suite Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Experience comfort and convenience at the Crowne Plaza, located in the heart of the city. Our modern rooms feature all the amenities you need for a comfortable stay, including free Wi-Fi and flat-screen TVs. Start your day with a delicious breakfast at our on-site restaurant, or unwind with a drink at the bar. With friendly service and a central location, the Crowne Plaza is the perfect choice for your next visit to the city.",
+            "hotelName": "Crowne Plaza",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F11.Crowne%20Plaza%20-%20Junior%20Suite.png?alt=media&token=70de46a9-9889-4e28-a1ac-68da74043502",
+            "price": 10500,
+            "roomId": 21,
+            "roomQuantity": 20,
+            "title": "Junior Suite"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Conveniently located near the city's main attractions, the DoubleTree by Hilton offers comfortable accommodations and modern amenities for travelers on a budget. Our spacious rooms feature plush bedding, flat-screen TVs, and complimentary Wi-Fi. Guests can enjoy a hearty breakfast at our on-site restaurant, or relax with a drink at the bar. With friendly service and a convenient location, the DoubleTree by Hilton is the perfect choice for your next stay.",
+            "hotelName": "DoubleTree by Hilton",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F12.DoubleTree%20by%20Hilton%20-%20King%20Room.png?alt=media&token=280964da-77c2-43e8-a318-1a432e1cac1f",
+            "price": 12500,
+            "roomId": 22,
+            "roomQuantity": 18,
+            "title": "King Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Discover comfort and convenience at the Marriott, located in the heart of the city. Our spacious rooms feature modern amenities and cozy furnishings, ensuring a relaxing stay for every guest. Start your day with a complimentary breakfast at our on-site restaurant, or unwind with a dip in the pool. With attentive service and a central location, the Marriott is the perfect choice for your next business trip or vacation.",
+            "hotelName": "Marriott",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F13.Marriott%20-%20Standard%20Queen%20Room.png?alt=media&token=08b7e68d-3b22-411b-ad94-f06d2c3f8188",
+            "price": 13500,
+            "roomId": 23,
+            "roomQuantity": 16,
+            "title": "Standard Queen Room"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Experience comfort and convenience at the Ibis Styles, located in the heart of the city. Our modern rooms feature all the amenities you need for a comfortable stay, including free Wi-Fi and flat-screen TVs. Start your day with a delicious breakfast at our on-site restaurant, or unwind with a drink at the bar. With friendly service and a central location, the Ibis Styles is the perfect choice for your next visit to the city.",
+            "hotelName": "Ibis Styles",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F14.Ibis%20Styles%20-%20Executive%20Suite.png?alt=media&token=ffe09aa7-ea4b-40fe-9728-51406dba1123",
+            "price": 14500,
+            "roomId": 24,
+            "roomQuantity": 22,
+            "title": "Executive Suite"
+          },
+          {
+            "category": "Three star hotel",
+            "description": "Conveniently located near the city's main attractions, the Mercure offers comfortable accommodations and modern amenities for travelers on a budget. Our spacious rooms feature plush bedding, flat-screen TVs, and complimentary Wi-Fi. Guests can enjoy a hearty breakfast at our on-site restaurant, or relax with a drink at the bar. With friendly service and a convenient location, the Mercure is the perfect choice for your next stay.",
+            "hotelName": "Mercure",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/3StarHotel%2F15.Mercure%20-%20Family%20Suite.png?alt=media&token=f64b236e-5313-48eb-a6a9-bb679f7d2774",
+            "price": 15500,
+            "roomId": 25,
+            "roomQuantity": 24,
+            "title": "Family Suite"
+          },
+          {
+            "category": "Resort",
+            "description": "Escape to paradise at the luxurious Atlantis Resort, where every detail is designed to exceed your expectations. Our spacious rooms feature elegant decor, plush bedding, and state-of-the-art amenities. Indulge in a culinary journey at our world-class restaurants, or relax by the pool with a refreshing cocktail. With legendary service and attention to detail, the Atlantis Resort offers a truly extraordinary experience.",
+            "hotelName": "Atlantis Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F1.Atlantis%20Resort%20-%20Oceanfront%20Suite.png?alt=media&token=9dafc81b-f543-4dd1-a1dd-cd66876a94e6",
+            "price": 28000,
+            "roomId": 26,
+            "roomQuantity": 20,
+            "title": "Oceanfront Suite"
+          },
+          {
+            "category": "Resort",
+            "description": "Experience luxury at its finest at the Banyan Tree Resort, nestled in a tropical paradise. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our Michelin-starred restaurants, or pamper yourself with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Banyan Tree Resort promises an unforgettable getaway.",
+            "hotelName": "Banyan Tree Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F2.Banyan%20Tree%20Resort%20-%20Beach%20Villa.png?alt=media&token=05aabe60-a9ae-4126-bd37-89870d0a68a9",
+            "price": 32000,
+            "roomId": 27,
+            "roomQuantity": 18,
+            "title": "Beach Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Escape to a tropical paradise at the Four Seasons Resort, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our signature restaurants, or unwind with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Four Seasons Resort promises an unforgettable getaway.",
+            "hotelName": "Four Seasons Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F3.Four%20Seasons%20Resort%20-%20Luxury%20Beachfront%20Villa.png?alt=media&token=91e3658e-3372-49fa-aa1f-bb00d7053a5a",
+            "price": 35000,
+            "roomId": 28,
+            "roomQuantity": 22,
+            "title": "Luxury Beachfront Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Experience the ultimate in luxury at the Shangri-La Resort, where every detail is meticulously crafted to ensure an unparalleled stay. Our spacious rooms offer panoramic views of the ocean, along with modern amenities and elegant furnishings. Indulge in a culinary journey at our Michelin-starred restaurants, or relax by the infinity pool with a refreshing cocktail. With legendary service and attention to detail, the Shangri-La Resort offers a truly exceptional experience.",
+            "hotelName": "Shangri-La Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F4.Shangri-La%20Resort%20-%20Ocean%20View%20Suite.png?alt=media&token=cdf5b32c-c9c9-4e65-b95f-06e175904275",
+            "price": 30000,
+            "roomId": 29,
+            "roomQuantity": 24,
+            "title": "Ocean View Suite"
+          },
+          {
+            "category": "Resort",
+            "description": "Nestled in a secluded cove, the Aman Resort offers a serene escape from the hustle and bustle of everyday life. Our spacious rooms feature elegant decor and modern amenities, with stunning views of the surrounding landscape. Indulge in a world-class dining experience at our on-site restaurant, or unwind with a yoga session on the beach. Whether you're seeking relaxation or adventure, the Aman Resort promises an unforgettable retreat.",
+            "hotelName": "Aman Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F5.Aman%20Resort%20-%20Garden%20Villa.png?alt=media&token=02efe86e-4ead-4f97-a1a0-ee80d580902d",
+            "price": 25000,
+            "roomId": 30,
+            "roomQuantity": 20,
+            "title": "Garden Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Discover paradise at the St. Regis Resort, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a culinary journey at our Michelin-starred restaurants, or unwind with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the St. Regis Resort promises an unforgettable getaway.",
+            "hotelName": "St. Regis Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F6.St.%20Regis%20Resort%20-%20Beachfront%20Suite.png?alt=media&token=8246f50d-350f-435a-9ef8-1bb815da6b4b",
+            "price": 28000,
+            "roomId": 31,
+            "roomQuantity": 19,
+            "title": "Beachfront Suite"
+          },
+          {
+            "category": "Resort",
+            "description": "Experience the height of luxury at the Raffles Resort, where every detail is meticulously crafted to ensure an unparalleled stay. Our spacious rooms offer panoramic views of the ocean, along with modern amenities and elegant furnishings. Indulge in a culinary journey at our Michelin-starred restaurants, or relax by the infinity pool with a refreshing cocktail. With legendary service and attention to detail, the Raffles Resort offers a truly exceptional experience.",
+            "hotelName": "Raffles Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F7.Raffles%20Resort%20-%20Oceanfront%20Villa.png?alt=media&token=d0c8fade-19ed-42f0-8436-f89ca5343bf0",
+            "price": 32000,
+            "roomId": 32,
+            "roomQuantity": 21,
+            "title": "Oceanfront Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Escape to paradise at the Mandarin Oriental Resort, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a culinary journey at our Michelin-starred restaurants, or unwind with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Mandarin Oriental Resort promises an unforgettable getaway.",
+            "hotelName": "Mandarin Oriental Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F8.Mandarin%20Oriental%20Resort%20-%20Beachfront%20Bungalow.png?alt=media&token=1bbc92e5-bb49-4530-a1fa-622f2c11c7eb",
+            "price": 30000,
+            "roomId": 33,
+            "roomQuantity": 22,
+            "title": "Beachfront Bungalow"
+          },
+          {
+            "category": "Resort",
+            "description": "Experience luxury at its finest at the Rosewood Resort, nestled in a tropical paradise. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our Michelin-starred restaurants, or pamper yourself with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Rosewood Resort promises an unforgettable getaway.",
+            "hotelName": "Rosewood Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F9.Rosewood%20Resort%20-%20Luxury%20Villa.png?alt=media&token=980e24f4-89d8-4515-a008-e12876604d91",
+            "price": 28000,
+            "roomId": 34,
+            "roomQuantity": 20,
+            "title": "Luxury Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Escape to paradise at the InterContinental Resort, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a culinary journey at our Michelin-starred restaurants, or unwind with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the InterContinental Resort promises an unforgettable getaway.",
+            "hotelName": "InterContinental Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F10.InterContinental%20Resort%20-%20Beachfront%20Suite.png?alt=media&token=f5b70b14-8830-4a2e-9b59-b8e7dfbc34e8",
+            "price": 32000,
+            "roomId": 35,
+            "roomQuantity": 18,
+            "title": "Beachfront Suite"
+          },
+          {
+            "category": "Resort",
+            "description": "Discover paradise at the One&Only Resort, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our Michelin-starred restaurants, or pamper yourself with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the One&Only Resort promises an unforgettable getaway.",
+            "hotelName": "One&Only Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F11.One%26Only%20Resort%20-%20Ocean%20View%20Villa.png?alt=media&token=853da9ba-b4dc-4d44-a1f4-2f7c4ce237c9g",
+            "price": 30000,
+            "roomId": 36,
+            "roomQuantity": 22,
+            "title": "Ocean View Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Experience luxury at its finest at the Anantara Resort, nestled in a tropical paradise. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our Michelin-starred restaurants, or pamper yourself with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Anantara Resort promises an unforgettable getaway.",
+            "hotelName": "Anantara Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F12.Anantara%20Resort%20-%20Beachfront%20Villa.png?alt=media&token=827835cd-460f-4be4-9d7e-98abcdae63a6",
+            "price": 32000,
+            "roomId": 37,
+            "roomQuantity": 24,
+            "title": "Beachfront Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Escape to paradise at the Belmond Resort, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our Michelin-starred restaurants, or pamper yourself with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Belmond Resort promises an unforgettable getaway.",
+            "hotelName": "Belmond Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F13.Belmond%20Resort%20-%20Oceanfront%20Suite.png?alt=media&token=0a17373b-5fce-4a57-8974-e3b489b0ac1d",
+            "price": 30000,
+            "roomId": 38,
+            "roomQuantity": 19,
+            "title": "Oceanfront Suite"
+          },
+          {
+            "category": "Resort",
+            "description": "Experience luxury at its finest at the JW Marriott Resort, nestled in a tropical paradise. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our Michelin-starred restaurants, or pamper yourself with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the JW Marriott Resort promises an unforgettable getaway.",
+            "hotelName": "JW Marriott Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F14.JW%20Marriott%20Resort%20-%20Beachfront%20Villa.png?alt=media&token=4d160982-3dd7-4958-8c9b-d0f77a41f914",
+            "price": 28000,
+            "roomId": 39,
+            "roomQuantity": 23,
+            "title": "Beachfront Villa"
+          },
+          {
+            "category": "Resort",
+            "description": "Discover paradise at the Six Senses Resort, where luxury meets tranquility in a stunning beachfront setting. Our spacious rooms feature elegant decor and modern amenities, with breathtaking views of the ocean or lush gardens. Indulge in a world-class dining experience at our Michelin-starred restaurants, or pamper yourself with a massage at our award-winning spa. Whether you're seeking adventure or relaxation, the Six Senses Resort promises an unforgettable getaway.",
+            "hotelName": "Six Senses Resort",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/resort%2F15.Six%20Senses%20Resort%20-%20Ocean%20View%20Villa.png?alt=media&token=bea6673f-eae8-4bef-9b67-1a3a6dbdc4e1",
+            "price": 30000,
+            "roomId": 40,
+            "roomQuantity": 22,
+            "title": "Ocean View Villa"
+          },
+          {
+            "category": "Guest House",
+            "description": "Experience cozy comfort at the Garden Guest House, where every detail is designed to make you feel at home. Our charming rooms offer a peaceful retreat from the hustle and bustle of city life, with comfortable furnishings and modern amenities. Wake up to a delicious breakfast served in our garden courtyard, and explore the nearby attractions just steps away from our doorstep. Whether you're traveling for business or leisure, the Garden Guest House provides a warm and welcoming stay.",
+            "hotelName": "Garden Guest House",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/guestHouse%2F1.Garden%20Guest%20House%20-%20Cozy%20Single%20Room.png?alt=media&token=8c109039-f48f-428f-83ba-f064433c4476",
+            "price": 3500,
+            "roomId": 41,
+            "roomQuantity": 20,
+            "title": "Cozy Single Room"
+          },
+          {
+            "category": "Guest House",
+            "description": "Escape to tranquility at the River View Guest House, nestled along the banks of a serene river. Our comfortable rooms offer picturesque views and all the amenities you need for a relaxing stay. Enjoy a leisurely stroll along the riverbank, or unwind with a book in our cozy lounge area. With personalized service and a peaceful atmosphere, the River View Guest House is the perfect choice for your next getaway.",
+            "hotelName": "River View Guest House",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/guestHouse%2F2.River%20View%20Guest%20House%20-%20Riverside%20Suite.png?alt=media&token=1429fd43-e9fa-4681-af2b-5f27ee22822b",
+            "price": 4500,
+            "roomId": 42,
+            "roomQuantity": 18,
+            "title": "Riverside Suite"
+          },
+          {
+            "category": "Guest House",
+            "description": "Discover comfort and convenience at the Green View Guest House, located amidst lush greenery and scenic beauty. Our spacious rooms offer a peaceful retreat from the hustle and bustle of city life, with modern amenities and comfortable furnishings. Wake up to the sound of birds chirping outside your window, and enjoy a delicious breakfast served in our garden courtyard. With personalized service and a serene atmosphere, the Green View Guest House promises a memorable stay.",
+            "hotelName": "Green View Guest House",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/guestHouse%2F3.Green%20View%20Guest%20House%20-%20Garden%20View%20Room.png?alt=media&token=bd7c2699-cf8c-412f-b9e1-35fd5c421cf6",
+            "price": 5500,
+            "roomId": 43,
+            "roomQuantity": 22,
+            "title": "Garden View Room"
+          },
+          {
+            "category": "Guest House",
+            "description": "Escape to serenity at the Mountain View Guest House, nestled amidst majestic mountains and pristine nature. Our cozy rooms offer breathtaking views and all the amenities you need for a comfortable stay. Enjoy a refreshing hike through the nearby trails, or simply relax on our outdoor terrace and soak in the panoramic vistas. With personalized service and a tranquil atmosphere, the Mountain View Guest House is the perfect retreat for nature lovers.",
+            "hotelName": "Mountain View Guest House",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/guestHouse%2F4.Mountain%20View%20Guest%20House%20-%20Mountain%20View%20Suite.png?alt=media&token=9cd63111-a385-4c41-9bc0-caddd80a2e66",
+            "price": 6500,
+            "roomId": 44,
+            "roomQuantity": 16,
+            "title": "Mountain View Suite"
+          },
+          {
+            "category": "Guest House",
+            "description": "Experience the warmth of home at the Sunset Guest House, where every guest is treated like family. Our cozy rooms offer a peaceful retreat from the hustle and bustle of city life, with comfortable furnishings and modern amenities. Relax on our rooftop terrace and watch the sun set over the horizon, or take a leisurely stroll along the nearby beach. With personalized service and a laid-back atmosphere, the Sunset Guest House is the perfect choice for a relaxing getaway.",
+            "hotelName": "Sunset Guest House",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/guestHouse%2F5.Sunset%20Guest%20House%20-%20Sunset%20View%20Room.png?alt=media&token=24f26b4f-ca9b-4a27-bb05-14338c7281ea",
+            "price": 7500,
+            "roomId": 45,
+            "roomQuantity": 20,
+            "title": "Sunset View Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Stay at the lively Generator Hostel, located in the heart of the city. Our dormitory-style rooms offer comfortable bunk beds and shared facilities, perfect for budget travelers and backpackers. Join fellow guests in our vibrant common areas, where you can socialize, play games, or relax with a book. With affordable rates and a central location, Generator Hostel is the ideal choice for your next adventure.",
+            "hotelName": "Generator Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F1.Generator%20Hostel%20-%20Standard%20Dormitory%20Room.png?alt=media&token=f1a282b8-02e3-4d1e-b51f-e5077501b4ee",
+            "price": 2000,
+            "roomId": 46,
+            "roomQuantity": 20,
+            "title": "Standard Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Discover a budget-friendly stay at the Meininger Hostel, conveniently located near major attractions and public transportation. Our cozy dormitory rooms feature comfortable bunk beds and shared facilities, perfect for solo travelers or groups. Enjoy a complimentary breakfast each morning before heading out to explore the city. With friendly staff and a welcoming atmosphere, Meininger Hostel offers a memorable stay without breaking the bank.",
+            "hotelName": "Meininger Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F2.Meininger%20Hostel%20-%20Shared%20Dormitory%20Room.png?alt=media&token=41e6a357-2f4e-445b-b136-25bac33a23b1",
+            "price": 2500,
+            "roomId": 47,
+            "roomQuantity": 18,
+            "title": "Shared Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Experience the vibrant atmosphere of the Wombats City Hostel, located in the heart of the city's entertainment district. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Join fellow guests in our lively common areas, where you can socialize, play games, or relax with a drink from our onsite bar. With affordable rates and a central location, Wombats City Hostel is the perfect base for exploring the city.",
+            "hotelName": "Wombats City Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F3.Wombats%20City%20Hostel%20-%20Economy%20Dormitory%20Room.png?alt=media&token=1f5b9c7f-f6ae-40e7-807a-23997765a1ff",
+            "price": 3000,
+            "roomId": 48,
+            "roomQuantity": 22,
+            "title": "Economy Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Stay at the trendy St. Christopher's Inn Hostel, located in a historic building in the city center. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Join fellow guests in our lively common areas, where you can socialize, play games, or grab a bite to eat at our onsite restaurant. With affordable rates and a central location, St. Christopher's Inn Hostel offers a memorable stay for backpackers and solo travelers.",
+            "hotelName": "St. Christopher's Inn Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F4.St.%20Christopher's%20Inn%20Hostel%20-%20Basic%20Dormitory%20Room.png?alt=media&token=1f837cbd-f9e2-4668-976f-c5efd1bdfd7c",
+            "price": 3500,
+            "roomId": 49,
+            "roomQuantity": 16,
+            "title": "Basic Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Discover a comfortable stay at the Plus Hostel, located in a historic building in the heart of the city. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Enjoy a complimentary breakfast each morning before heading out to explore the city. With affordable rates and a central location, Plus Hostel offers a memorable stay without breaking the bank.",
+            "hotelName": "Plus Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F5.Plus%20Hostel%20-%20Standard%20Dormitory%20Room.png?alt=media&token=94cc1f2f-ad4b-4f48-b85b-f08a583064a0",
+            "price": 4000,
+            "roomId": 50,
+            "roomQuantity": 20,
+            "title": "Standard Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Experience a cozy stay at the Safestay Hostel, located in a historic building in the heart of the city. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Join fellow guests in our vibrant common areas, where you can socialize, play games, or relax with a drink from our onsite bar. With affordable rates and a central location, Safestay Hostel offers a memorable stay without breaking the bank.",
+            "hotelName": "Safestay Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F6.Safestay%20Hostel%20-%20Shared%20Dormitory%20Room.png?alt=media&token=aac7d765-4d15-4333-94a1-aea388983b2c",
+            "price": 4500,
+            "roomId": 51,
+            "roomQuantity": 18,
+            "title": "Shared Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Stay at the lively Baxpax Hostel, located in the heart of the city's cultural district. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget travelers and backpackers. Join fellow guests in our vibrant common areas, where you can socialize, play games, or relax with a drink from our onsite bar. With affordable rates and a central location, Baxpax Hostel is the ideal choice for your next adventure.",
+            "hotelName": "Baxpax Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F7.Baxpax%20Hostel%20-%20Economy%20Dormitory%20Room.png?alt=media&token=469ae0f8-bd2a-4702-941c-eac10402b39a",
+            "price": 2000,
+            "roomId": 52,
+            "roomQuantity": 22,
+            "title": "Economy Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Discover a budget-friendly stay at the A&O Hostel, conveniently located near major attractions and public transportation. Our cozy dormitory rooms feature comfortable bunk beds and shared facilities, perfect for solo travelers or groups. Enjoy a complimentary breakfast each morning before heading out to explore the city. With friendly staff and a welcoming atmosphere, A&O Hostel offers a memorable stay without breaking the bank.",
+            "hotelName": "A&O Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F8.A%26O%20Hostel%20-%20Standard%20Dormitory%20Room.png?alt=media&token=87117cc7-b552-45fe-8975-c87278cf4be3",
+            "price": 2500,
+            "roomId": 53,
+            "roomQuantity": 20,
+            "title": "Standard Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Experience the vibrant atmosphere of the City Backpackers Hostel, located in the heart of the city's entertainment district. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Join fellow guests in our lively common areas, where you can socialize, play games, or relax with a drink from our onsite bar. With affordable rates and a central location, City Backpackers Hostel is the perfect base for exploring the city.",
+            "hotelName": "City Backpackers Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F9.City%20Backpackers%20Hostel%20-%20Shared%20Dormitory%20Room.png?alt=media&token=1e0daa13-4592-4a89-9ca1-705597643936",
+            "price": 3000,
+            "roomId": 54,
+            "roomQuantity": 18,
+            "title": "Shared Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Stay at the trendy Mosaic House Hostel, located in a historic building in the city center. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Join fellow guests in our lively common areas, where you can socialize, play games, or grab a bite to eat at our onsite restaurant. With affordable rates and a central location, Mosaic House Hostel offers a memorable stay for backpackers and solo travelers.",
+            "hotelName": "Mosaic House Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F10.Mosaic%20House%20Hostel%20-%20Basic%20Dormitory%20Room.png?alt=media&token=73ddd512-4155-4860-a9f8-ff3ed4291dcd",
+            "price": 3500,
+            "roomId": 55,
+            "roomQuantity": 16,
+            "title": "Basic Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Discover a comfortable stay at the Hostel One, located in a historic building in the heart of the city. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Enjoy a complimentary breakfast each morning before heading out to explore the city. With affordable rates and a central location, Hostel One offers a memorable stay without breaking the bank.",
+            "hotelName": "Hostel One",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F11.Hostel%20One%20-%20Standard%20Dormitory%20Room.png?alt=media&token=c47ca60c-1d31-4705-bb88-ba241c32c966",
+            "price": 4000,
+            "roomId": 56,
+            "roomQuantity": 20,
+            "title": "Standard Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Experience a cozy stay at the Stay Inn Hostel, located in a historic building in the heart of the city. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Join fellow guests in our vibrant common areas, where you can socialize, play games, or relax with a drink from our onsite bar. With affordable rates and a central location, Stay Inn Hostel offers a memorable stay without breaking the bank.",
+            "hotelName": "Stay Inn Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F12.Stay%20Inn%20Hostel%20-%20Shared%20Dormitory%20Room.png?alt=media&token=5144a476-4453-452d-9968-1aa128abef59",
+            "price": 4500,
+            "roomId": 57,
+            "roomQuantity": 18,
+            "title": "Shared Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Stay at the lively Hostel Blues, located in the heart of the city's cultural district. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget travelers and backpackers. Join fellow guests in our vibrant common areas, where you can socialize, play games, or relax with a drink from our onsite bar. With affordable rates and a central location, Hostel Blues is the ideal choice for your next adventure.",
+            "hotelName": "Hostel Blues",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F13.Hostel%20Blues%20-%20Economy%20Dormitory%20Room.png?alt=media&token=b63e5ce5-a58c-40a1-9195-3111044c0d79",
+            "price": 2000,
+            "roomId": 58,
+            "roomQuantity": 22,
+            "title": "Economy Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Discover a budget-friendly stay at the Equity Point Hostel, conveniently located near major attractions and public transportation. Our cozy dormitory rooms feature comfortable bunk beds and shared facilities, perfect for solo travelers or groups. Enjoy a complimentary breakfast each morning before heading out to explore the city. With friendly staff and a welcoming atmosphere, Equity Point Hostel offers a memorable stay without breaking the bank.",
+            "hotelName": "Equity Point Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F14.Equity%20Point%20Hostel%20-%20Standard%20Dormitory%20Room.png?alt=media&token=240e0de7-1a9a-4e25-9f3c-7245da78d0ef",
+            "price": 2500,
+            "roomId": 59,
+            "roomQuantity": 20,
+            "title": "Standard Dormitory Room"
+          },
+          {
+            "category": "Hostel",
+            "description": "Experience the vibrant atmosphere of the Ostello Bello Hostel, located in the heart of the city's entertainment district. Our dormitory rooms offer comfortable bunk beds and shared facilities, perfect for budget-conscious travelers. Join fellow guests in our lively common areas, where you can socialize, play games, or relax with a drink from our onsite bar. With affordable rates and a central location, Ostello Bello Hostel is the perfect base for exploring the city.",
+            "hotelName": "Ostello Bello Hostel",
+            "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/hostel%2F15.Ostello%20Bello%20Hostel%20-%20Shared%20Dormitory%20Room.png?alt=media&token=1bc98983-c6f4-4716-ba81-1dd314f1698d",
+            "price": 3000,
+            "roomId": 60,
+            "roomQuantity": 18,
+            "title": "Shared Dormitory Room"
+          }
+      ],
+      "category": [
+          {
+              "name": "Five star hotel",
+              "id": "c1",
+              "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/category%2F5starHotel.png?alt=media&token=1f75ac27-97d3-4a33-8800-bbce5a5258ef"
+          },
+          {
+              "name": "Three star hotel",
+              "id": "c2",
+              "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/category%2F3stq.png?alt=media&token=d1761409-7d23-4049-9b67-65e811f23dd1"
+          },
+          {
+              "name": "Resort",
+              "id": "c3",
+              "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/category%2F3.png?alt=media&token=9080aea8-4656-4d06-b1e3-7074699deb84"
+          },
+          {
+              "name": "Guest House",
+              "id": "c4",
+              "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/category%2F5.png?alt=media&token=13b52036-5a4a-406e-a6e5-b443ab8f1056"
+          },
+          {
+              "name": "Hostel",
+              "id": "c5",
+              "image": "https://firebasestorage.googleapis.com/v0/b/book-hotels-52614.appspot.com/o/category%2Fhostel.png?alt=media&token=8f178f14-ce39-4788-848d-a15f1d79804e"
+          }
+      ]
+  }
+}

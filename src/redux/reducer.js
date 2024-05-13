@@ -57,6 +57,7 @@ const bookedReducer = (bookedState = { isLoading: true, booked: []}, action) => 
                     key: key,
                 })
             }
+            console.log('Booked Reducer:', booked)
             return {
                 ...bookedState,
                 isLoading: false,
@@ -84,6 +85,7 @@ const bookingReducer = (bookingState = { isLoading: true, booking: []}, action) 
                     key: key,
                 })
             }
+            console.log('booking reducer', booking)
             return {
                 ...bookingState,
                 isLoading: false,

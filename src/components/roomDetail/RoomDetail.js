@@ -9,7 +9,8 @@ import ViewReview from '../reviews/ViewReview'
 const mapStateToProps = state => {
     return {
         rooms: state.rooms.rooms,
-        booked: state.booked.booked
+        booked: state.booked.booked,
+        token: state.auth.token
     }
 }
 
@@ -22,9 +23,6 @@ const mapDispatchToProps = dispatch => {
 
 export const RoomDetail = (props) => {
     const [quantityNumber,setQuantityNumber] = useState(0)
-
-    // console.log('Booked:', props.booked)
-    
     useEffect(()=> {
         props.fetchRooms();
         props.fetchBooked();
@@ -44,7 +42,10 @@ export const RoomDetail = (props) => {
     bookedRooms.forEach(obj => {
         totalBooked+= obj.booked;
     })
-
+    const image = roomDetail.map(room => {return room.image})[0];
+    const title = roomDetail.map(room => {return room.title})[0];
+    const roomId = roomDetail.map(room => {return room.roomId})[0];
+    const hotel = roomDetail.map(room => {return room.hotelName})[0];
     const roomQuantity = roomDetail.map(room => {return room.roomQuantity})[0];
     const roomPrice = roomDetail.map(room => {return room.price})[0];
 
@@ -53,9 +54,60 @@ export const RoomDetail = (props) => {
     const increaseQuantityBtnDisable = quantityNumber === roomAvailable? true : false;
     const decreaseQuantityBtnDisable = quantityNumber === 0? true : false;
 
-    
-
-    // console.log('Total Booked:', totalBooked)
+    const bookingModule = props.token === null?(
+        <div className='logIngMsg'>
+                                <div className='BooKingInfoDisplay'>
+                                    <div className='QuantityTitlePosition'>
+                                            <h2 className='h2FontSize'><strong className='StrongTitle'>Please! Log in to Book Rooms</strong></h2>
+                                    </div>
+                                    <div className='BookingBtnPosition'>
+                                        <Link
+                                            to='/login'
+                                        >
+                                            <button className='BookBtn'>Log in</button>
+                                        </Link>
+                                        <Link
+                                            to='/rooms'
+                                        >
+                                            <button className='CancelBtn'>Cancel</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+    ):(
+        <div className='BookingDisplay'>
+                                <div className='BookingModule'>
+                                    <button className='QuantityBtn' disabled={decreaseQuantityBtnDisable} onClick={decreaseQuantity}>-</button>
+                                    <p className='QuantityDisplay'>{quantityNumber}</p>
+                                    <button className='QuantityBtn' disabled={increaseQuantityBtnDisable} onClick={increaseQuantity}>+</button>
+                                </div>
+                                <div className='BooKingInfoDisplay'>
+                                    <div className='QuantityTitlePosition'>
+                                        <h2 className='h2FontSize'><strong className='StrongTitle'>Total Price:</strong> {totalPrice}.Tk</h2>
+                                    </div>
+                                    <div className='BookingBtnPosition'>
+                                        <Link
+                                            to='/bookingDetail'
+                                            state={{
+                                                image:image,
+                                                title:title,
+                                                roomId: roomId,
+                                                hotel:hotel,
+                                                price:totalPrice,
+                                                quantity:quantityNumber,
+                                            }}    
+                                        >
+                                            <button disabled={decreaseQuantityBtnDisable} className='BookBtn'>Book Now</button>
+                                        </Link>
+                                        <Link
+                                            to='/rooms'
+                                        >
+                                            <button className='CancelBtn'>Cancel</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+    )
 
 
   return (
@@ -89,38 +141,7 @@ export const RoomDetail = (props) => {
                             <div className='TitlePosition'>
                                 <h2 className='h2FontSize'><strong className='StrongTitle'>Price:</strong> {room.price}.Tk</h2>
                             </div>
-                            <div className='BookingDisplay'>
-                                <div className='BookingModule'>
-                                    <button className='QuantityBtn' disabled={decreaseQuantityBtnDisable} onClick={decreaseQuantity}>-</button>
-                                    <p className='QuantityDisplay'>{quantityNumber}</p>
-                                    <button className='QuantityBtn' disabled={increaseQuantityBtnDisable} onClick={increaseQuantity}>+</button>
-                                </div>
-                                <div className='BooKingInfoDisplay'>
-                                    <div className='QuantityTitlePosition'>
-                                        <h2 className='h2FontSize'><strong className='StrongTitle'>Total Price:</strong> {totalPrice}.Tk</h2>
-                                    </div>
-                                    <div className='BookingBtnPosition'>
-                                        <Link
-                                            to='/bookingDetail'
-                                            state={{
-                                                image:room.image,
-                                                title:room.title,
-                                                roomId: room.roomId,
-                                                hotel:room.hotelName,
-                                                price:totalPrice,
-                                                quantity:quantityNumber,
-                                            }}    
-                                        >
-                                            <button disabled={decreaseQuantityBtnDisable} className='BookBtn'>Book Now</button>
-                                        </Link>
-                                        <Link
-                                            to='/rooms'
-                                        >
-                                            <button className='CancelBtn'>Cancel</button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
+                            {bookingModule}
                         </div>
                     </section>
                     <section><PostReview room={room} key={room.key}/></section>

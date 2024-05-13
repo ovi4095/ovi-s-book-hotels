@@ -6,6 +6,11 @@
     align-items: center;
 
 }
+.EmptyOrderList{
+    margin-top: 15rem;
+    color: #A91D3A;
+    margin-bottom: 15rem;
+}
 
 /* Show Booking List Component */
 .BookingContainer {
@@ -19,8 +24,9 @@
     border-radius: 12px;
     margin-bottom: 2rem;
 }
-.BookingImage {
+.BookingImages {
     width: 320px;
+    border-radius: 12px;
 }
 .BookingAllInfo {
     display: flex;
@@ -102,8 +108,9 @@ font-size: .7rem;
         display: flex;
         flex-direction: row;
         margin: 1rem;
+        
     }
-    .BookingImage {
+    .BookingImages {
         width: 180px;
         margin-top: .5rem;
     }
@@ -158,9 +165,18 @@ font-size: .7rem;
         display: flex;
         flex-direction: row;
         margin: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .BookingAllInfo {
         flex-direction: row;
     }
+    .EmptyOrderList{
+        margin-top: 15rem;
+        color: #A91D3A;
+        margin-bottom: 15rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    
 }

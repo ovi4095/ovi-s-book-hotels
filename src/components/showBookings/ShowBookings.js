@@ -3,11 +3,13 @@ import '../../css/ShowBookings.css'
 import { connect } from 'react-redux'
 import ShowBookingList from './ShowBookingList'
 import { fetchBooked, fetchBooking, removeBooking } from '../../redux/actionCreators'
+import Loading from '../loading/Loading'
 
 const mapStateToProps = (state) => {
     return {
         booking: state.booking.booking,
-        booked: state.booked.booked
+        booked: state.booked.booked,
+        loading: state.booking.isLoading
     }
 }
 
@@ -27,21 +29,24 @@ export const ShowBookings = (props) => {
     const handleDeleteBooking = key => {
         let selectedBooking = props.booking.filter(booking => booking.key === key)[0];
         let selectedBooked = props.booked.filter(booked => booked.uniqKey === selectedBooking.uniqKey)[0];
-        // console.log("Selected Booking:", selectedBooking.uniqKey)
-        // console.log("Selected Booking Key:", key)
-        // console.log("Selected Booked key:", selectedBooked.key)
+        console.log('Booking Key:', key)
+        console.log('Booked Key:', selectedBooked.key)
         props.removeBooking(key, selectedBooked.key)
         setTimeout(() =>{
             props.fetchBooking();
             props.fetchBooked();
         }, 500)
-
-
     }
-    const bookingList = <ShowBookingList booking={props.booking} handleDeleteBooking={handleDeleteBooking} key={Math.random().toString()}/>
-  return (
-    <div className='BookingListContainer'>{bookingList}</div>
-  )
+
+const bookingList = <ShowBookingList booking={props.booking} handleDeleteBooking={handleDeleteBooking} key={Math.random().toString()}/>
+
+const booking = props.booking.length !==0? bookingList: <h4 className='EmptyOrderList'>No Order Found</h4>;
+
+const bookings = props.loading === true? (<Loading/>): booking;
+
+return (
+    <div className='BookingListContainer'>{bookings}</div>    
+)
 }
 
 

@@ -10,7 +10,7 @@ const ShowBookingList = (props) => {
             return (
                 <div className='BookingContainer' key={Math.random().toString()}>
                     <div className='BookingImagePosition'>
-                        <img className='BookingImage' src={booking.image} alt="" />
+                        <img className='BookingImages' src={booking.image} alt="" />
                     </div>
                     <div className='BookingAllInfo'>
                         <div className='BookingRoomInfo'>
